@@ -1,0 +1,241 @@
+﻿id_pedido,data_venda,produto,quantidade,preco_unitario_usd,total_venda_usd,faturamento_usd,regiao,vendedor
+SO-1001,2026-05-04,Teclado Mecânico,6,112.70,676.20,676.20,Norte,Sofia Kowalski
+SO-1002,2026-06-26,Hub USB-C,6,35.78,214.68,214.68,Sul,Sofia Kowalski
+SO-1003,2026-03-08,Mesa com Regulagem de Altura,1,111.15,111.15,111.15,Sul,Elena Cohen
+SO-1004,2026-02-14,Webcam 1080p,1,112.67,112.67,112.67,Leste,Omar Haddad
+SO-1005,2026-02-22,Webcam 1080p,1,54.09,54.09,54.09,Central,Sofia Kowalski
+SO-1006,2026-01-18,Luminária de Mesa,4,215.54,862.16,862.16,Oeste,Omar Haddad
+SO-1007,2026-04-13,Organizador de Cabos,3,17.52,52.56,52.56,Leste,Tomás Tanaka
+SO-1008,2026-05-06,Fones de Ouvido com Cancelamento de Ruído,6,181.65,1089.90,1089.90,Oeste,Omar Haddad
+SO-1009,2026-04-04,Suporte para Notebook,8,28.72,229.76,229.76,Leste,Sofia Kowalski
+SO-1010,2026-03-01,Cadeira Ergonômica,7,143.97,1007.79,1007.79,Leste,Priya Herrera
+SO-1011,2026-01-27,Organizador de Cabos,7,147.79,1034.53,1034.53,Norte,Priya Herrera
+SO-1012,2026-05-19,Mouse sem Fio,5,206.67,1033.35,1033.35,Norte,Chen Bennett
+SO-1013,2026-04-19,Hub USB-C,6,119.74,718.44,718.44,Sul,Tomás Tanaka
+SO-1014,2026-04-16,Teclado Mecânico,2,179.18,358.36,358.36,Norte,Tomás Tanaka
+SO-1015,2026-06-14,SSD Externo 1 TB,8,149.41,1195.28,1195.28,Leste,Chen Bennett
+SO-1016,2026-01-06,Cadeira Ergonômica,1,223.56,223.56,223.56,Central,Elena Cohen
+SO-1017,2026-03-11,Luminária de Mesa,7,59.12,413.84,413.84,Norte,Chen Bennett
+SO-1018,2026-04-17,Teclado Mecânico,7,90.62,634.34,634.34,Leste,Priya Herrera
+SO-1019,2026-01-10,Webcam 1080p,2,197.09,394.18,394.18,Leste,Sofia Kowalski
+SO-1020,2026-06-29,Suporte para Notebook,4,167.13,668.52,668.52,Leste,Priya Herrera
+SO-1021,2026-04-16,Mouse sem Fio,3,63.19,189.57,189.57,Sul,Sofia Kowalski
+SO-1022,2026-03-17,SSD Externo 1 TB,3,36.67,110.01,110.01,Leste,Tomás Tanaka
+SO-1023,2026-03-26,Hub USB-C,2,179.02,358.04,358.04,Central,Omar Haddad
+SO-1024,2026-03-30,Luminária de Mesa,1,54.88,54.88,54.88,Central,Elena Cohen
+SO-1025,2026-06-28,Suporte para Notebook,4,161.26,645.04,645.04,Leste,Elena Cohen
+SO-1026,2026-05-21,Suporte para Notebook,5,214.71,1073.55,1073.55,Oeste,Sofia Kowalski
+SO-1027,2026-02-11,Mouse sem Fio,5,12.96,64.80,64.80,Central,Sofia Kowalski
+SO-1028,2026-01-18,Organizador de Cabos,5,68.38,341.90,341.90,Central,Priya Herrera
+SO-1029,2026-06-21,Teclado Mecânico,4,30.61,122.44,122.44,Central,Elena Cohen
+SO-1030,2026-01-24,Teclado Mecânico,8,103.99,831.92,831.92,Central,Priya Herrera
+SO-1031,2026-02-14,Luminária de Mesa,1,217.69,217.69,217.69,Central,Elena Cohen
+SO-1032,2026-06-13,Mouse sem Fio,4,248.32,993.28,993.28,Norte,Chen Bennett
+SO-1033,2026-02-12,Suporte para Notebook,7,197.63,1383.41,1383.41,Oeste,Omar Haddad
+SO-1034,2026-04-23,27-inch Monitor,1,153.50,153.50,153.50,Leste,Sofia Kowalski
+SO-1035,2026-06-28,Webcam 1080p,4,202.90,811.60,811.60,Sul,Omar Haddad
+SO-1036,2026-02-26,Mouse sem Fio,5,135.96,679.80,679.80,Central,Chen Bennett
+SO-1037,2026-01-02,Organizador de Cabos,6,74.49,446.94,446.94,Leste,Chen Bennett
+SO-1038,2026-02-02,Mouse sem Fio,4,115.64,462.56,462.56,Leste,Elena Cohen
+SO-1039,2026-06-09,Suporte para Notebook,5,245.50,1227.50,1227.50,Central,Elena Cohen
+SO-1040,2026-04-30,Suporte para Notebook,5,161.72,808.60,808.60,Central,Priya Herrera
+SO-1041,2026-02-26,Fones de Ouvido com Cancelamento de Ruído,1,213.38,213.38,213.38,Leste,Sofia Kowalski
+SO-1042,2026-05-09,Organizador de Cabos,3,221.01,663.03,663.03,Central,Elena Cohen
+SO-1043,2026-05-23,Webcam 1080p,4,158.95,635.80,635.80,Norte,Elena Cohen
+SO-1044,2026-02-01,Organizador de Cabos,5,37.47,187.35,187.35,Oeste,Omar Haddad
+SO-1045,2026-04-02,Mouse sem Fio,7,124.94,874.58,874.58,Sul,Sofia Kowalski
+SO-1046,2026-05-11,Mesa com Regulagem de Altura,1,80.58,80.58,80.58,Oeste,Chen Bennett
+SO-1047,2026-01-30,SSD Externo 1 TB,7,143.93,1007.51,1007.51,Leste,Sofia Kowalski
+SO-1048,2026-01-04,Cadeira Ergonômica,1,151.12,151.12,151.12,Oeste,Tomás Tanaka
+SO-1049,2026-04-12,Organizador de Cabos,4,84.27,337.08,337.08,Sul,Omar Haddad
+SO-1050,2026-01-27,Mouse sem Fio,1,96.96,96.96,96.96,Norte,Sofia Kowalski
+SO-1051,2026-01-16,Cadeira Ergonômica,7,155.39,1087.73,1087.73,Central,Omar Haddad
+SO-1052,2026-03-04,Teclado Mecânico,3,125.54,376.62,376.62,Leste,Sofia Kowalski
+SO-1053,2026-03-22,Cadeira Ergonômica,5,70.79,353.95,353.95,Leste,Tomás Tanaka
+SO-1054,2026-05-09,Fones de Ouvido com Cancelamento de Ruído,6,204.83,1228.98,1228.98,Central,Sofia Kowalski
+SO-1055,2026-06-23,SSD Externo 1 TB,8,190.17,1521.36,1521.36,Sul,Sofia Kowalski
+SO-1056,2026-06-09,27-inch Monitor,7,239.78,1678.46,1678.46,Central,Sofia Kowalski
+SO-1057,2026-04-03,Mouse sem Fio,8,14.00,112.00,112.00,Oeste,Chen Bennett
+SO-1058,2026-06-20,Mouse sem Fio,2,191.22,382.44,382.44,Central,Tomás Tanaka
+SO-1059,2026-06-11,Webcam 1080p,2,183.47,366.94,366.94,Oeste,Tomás Tanaka
+SO-1060,2026-06-12,27-inch Monitor,2,36.29,72.58,72.58,Sul,Priya Herrera
+SO-1061,2026-04-27,Organizador de Cabos,7,208.15,1457.05,1457.05,Norte,Tomás Tanaka
+SO-1062,2026-01-10,Suporte para Notebook,5,103.77,518.85,518.85,Leste,Elena Cohen
+SO-1063,2026-04-01,Organizador de Cabos,7,229.06,1603.42,1603.42,Leste,Elena Cohen
+SO-1064,2026-06-10,SSD Externo 1 TB,6,132.61,795.66,795.66,Sul,Priya Herrera
+SO-1065,2026-06-23,Mouse sem Fio,7,213.29,1493.03,1493.03,Central,Omar Haddad
+SO-1066,2026-05-27,Cadeira Ergonômica,4,105.37,421.48,421.48,Sul,Chen Bennett
+SO-1067,2026-02-18,Fones de Ouvido com Cancelamento de Ruído,1,55.16,55.16,55.16,Oeste,Chen Bennett
+SO-1068,2026-03-17,Fones de Ouvido com Cancelamento de Ruído,8,150.91,1207.28,1207.28,Norte,Priya Herrera
+SO-1069,2026-04-25,SSD Externo 1 TB,8,55.16,441.28,441.28,Norte,Elena Cohen
+SO-1070,2026-05-05,Suporte para Notebook,8,114.94,919.52,919.52,Oeste,Tomás Tanaka
+SO-1071,2026-01-21,SSD Externo 1 TB,7,123.53,864.71,864.71,Leste,Priya Herrera
+SO-1072,2026-04-21,Teclado Mecânico,6,106.03,636.18,636.18,Norte,Tomás Tanaka
+SO-1073,2026-02-16,Mouse sem Fio,8,179.22,1433.76,1433.76,Central,Tomás Tanaka
+SO-1074,2026-04-21,Suporte para Notebook,7,162.66,1138.62,1138.62,Norte,Chen Bennett
+SO-1075,2026-05-02,Cadeira Ergonômica,5,207.98,1039.90,1039.90,Oeste,Sofia Kowalski
+SO-1076,2026-05-18,27-inch Monitor,7,123.91,867.37,867.37,Norte,Sofia Kowalski
+SO-1077,2026-05-16,Webcam 1080p,4,134.83,539.32,539.32,Central,Tomás Tanaka
+SO-1078,2026-05-21,Fones de Ouvido com Cancelamento de Ruído,6,80.19,481.14,481.14,Norte,Omar Haddad
+SO-1079,2026-04-04,Mesa com Regulagem de Altura,6,45.83,274.98,274.98,Norte,Omar Haddad
+SO-1080,2026-03-12,Organizador de Cabos,7,97.22,680.54,680.54,Oeste,Chen Bennett
+SO-1081,2026-03-19,Cadeira Ergonômica,7,145.34,1017.38,1017.38,Sul,Chen Bennett
+SO-1082,2026-01-23,Hub USB-C,1,78.43,78.43,78.43,Leste,Elena Cohen
+SO-1083,2026-02-22,Cadeira Ergonômica,4,24.31,97.24,97.24,Sul,Priya Herrera
+SO-1084,2026-05-31,Luminária de Mesa,3,110.73,332.19,332.19,Oeste,Sofia Kowalski
+SO-1085,2026-03-21,SSD Externo 1 TB,1,211.31,211.31,211.31,Central,Chen Bennett
+SO-1086,2026-01-03,Webcam 1080p,6,129.28,775.68,775.68,Sul,Elena Cohen
+SO-1087,2026-05-12,Webcam 1080p,6,119.41,716.46,716.46,Leste,Chen Bennett
+SO-1088,2026-03-07,Organizador de Cabos,5,247.06,1235.30,1235.30,Central,Tomás Tanaka
+SO-1089,2026-06-26,SSD Externo 1 TB,8,70.14,561.12,561.12,Sul,Elena Cohen
+SO-1090,2026-02-05,Suporte para Notebook,8,190.32,1522.56,1522.56,Oeste,Tomás Tanaka
+SO-1091,2026-04-26,Suporte para Notebook,2,47.23,94.46,94.46,Central,Sofia Kowalski
+SO-1092,2026-04-30,Mouse sem Fio,2,129.16,258.32,258.32,Leste,Sofia Kowalski
+SO-1093,2026-03-24,Mouse sem Fio,4,204.21,816.84,816.84,Norte,Priya Herrera
+SO-1094,2026-03-15,Fones de Ouvido com Cancelamento de Ruído,7,101.14,707.98,707.98,Central,Elena Cohen
+SO-1095,2026-06-12,Webcam 1080p,4,87.02,348.08,348.08,Oeste,Tomás Tanaka
+SO-1096,2026-01-14,Hub USB-C,3,95.05,285.15,285.15,Norte,Omar Haddad
+SO-1097,2026-01-06,Webcam 1080p,2,157.18,314.36,314.36,Leste,Sofia Kowalski
+SO-1098,2026-06-11,Teclado Mecânico,7,200.15,1401.05,1401.05,Sul,Omar Haddad
+SO-1099,2026-04-09,SSD Externo 1 TB,8,211.02,1688.16,1688.16,Sul,Priya Herrera
+SO-1100,2026-05-28,Luminária de Mesa,6,95.39,572.34,572.34,Norte,Omar Haddad
+SO-1101,2026-04-08,27-inch Monitor,3,174.42,523.26,523.26,Leste,Priya Herrera
+SO-1102,2026-05-09,Organizador de Cabos,3,20.42,61.26,61.26,Norte,Priya Herrera
+SO-1103,2026-04-02,Fones de Ouvido com Cancelamento de Ruído,2,147.50,295.00,295.00,Norte,Chen Bennett
+SO-1104,2026-02-17,27-inch Monitor,5,145.81,729.05,729.05,Norte,Chen Bennett
+SO-1105,2026-02-05,Suporte para Notebook,8,199.70,1597.60,1597.60,Sul,Elena Cohen
+SO-1106,2026-06-24,Teclado Mecânico,1,136.09,136.09,136.09,Norte,Elena Cohen
+SO-1107,2026-06-25,Suporte para Notebook,5,199.37,996.85,996.85,Oeste,Elena Cohen
+SO-1108,2026-03-31,Cadeira Ergonômica,5,21.33,106.65,106.65,Oeste,Sofia Kowalski
+SO-1109,2026-04-11,Teclado Mecânico,5,92.38,461.90,461.90,Sul,Priya Herrera
+SO-1110,2026-02-13,Teclado Mecânico,2,82.19,164.38,164.38,Norte,Chen Bennett
+SO-1111,2026-06-27,Webcam 1080p,5,164.71,823.55,823.55,Sul,Chen Bennett
+SO-1112,2026-02-13,Webcam 1080p,3,16.97,50.91,50.91,Central,Sofia Kowalski
+SO-1113,2026-03-29,Organizador de Cabos,5,116.14,580.70,580.70,Central,Tomás Tanaka
+SO-1114,2026-02-17,Mouse sem Fio,8,101.26,810.08,810.08,Oeste,Priya Herrera
+SO-1115,2026-03-25,Organizador de Cabos,3,106.98,320.94,320.94,Norte,Sofia Kowalski
+SO-1116,2026-06-07,Luminária de Mesa,6,217.82,1306.92,1306.92,Norte,Chen Bennett
+SO-1117,2026-04-03,Hub USB-C,4,82.75,331.00,331.00,Oeste,Omar Haddad
+SO-1118,2026-06-28,Mesa com Regulagem de Altura,2,63.53,127.06,127.06,Norte,Priya Herrera
+SO-1119,2026-05-11,Organizador de Cabos,5,133.98,669.90,669.90,Leste,Elena Cohen
+SO-1120,2026-05-08,SSD Externo 1 TB,2,40.29,80.58,80.58,Central,Chen Bennett
+SO-1121,2026-03-24,Cadeira Ergonômica,5,67.68,338.40,338.40,Central,Omar Haddad
+SO-1122,2026-01-24,Luminária de Mesa,4,155.01,620.04,620.04,Central,Tomás Tanaka
+SO-1123,2026-06-08,Webcam 1080p,7,164.92,1154.44,1154.44,Leste,Sofia Kowalski
+SO-1124,2026-01-08,Mesa com Regulagem de Altura,4,73.54,294.16,294.16,Oeste,Chen Bennett
+SO-1125,2026-02-08,Suporte para Notebook,6,64.57,387.42,387.42,Oeste,Elena Cohen
+SO-1126,2026-02-25,Suporte para Notebook,6,100.31,601.86,601.86,Central,Chen Bennett
+SO-1127,2026-01-14,SSD Externo 1 TB,2,101.62,203.24,203.24,Leste,Priya Herrera
+SO-1128,2026-01-24,Webcam 1080p,1,218.28,218.28,218.28,Leste,Priya Herrera
+SO-1129,2026-05-02,27-inch Monitor,7,136.89,958.23,958.23,Oeste,Omar Haddad
+SO-1130,2026-05-19,SSD Externo 1 TB,7,222.09,1554.63,1554.63,Leste,Priya Herrera
+SO-1131,2026-06-15,Teclado Mecânico,8,216.34,1730.72,1730.72,Sul,Omar Haddad
+SO-1132,2026-05-13,Cadeira Ergonômica,8,101.86,814.88,814.88,Central,Sofia Kowalski
+SO-1133,2026-02-08,27-inch Monitor,4,76.08,304.32,304.32,Leste,Omar Haddad
+SO-1134,2026-05-15,Webcam 1080p,4,86.42,345.68,345.68,Norte,Tomás Tanaka
+SO-1135,2026-05-18,Hub USB-C,4,173.35,693.40,693.40,Sul,Priya Herrera
+SO-1136,2026-06-24,Fones de Ouvido com Cancelamento de Ruído,1,162.11,162.11,162.11,Oeste,Elena Cohen
+SO-1137,2026-06-11,Cadeira Ergonômica,5,153.15,765.75,765.75,Sul,Priya Herrera
+SO-1138,2026-05-28,Mouse sem Fio,2,155.60,311.20,311.20,Central,Sofia Kowalski
+SO-1139,2026-05-27,Mesa com Regulagem de Altura,6,16.70,100.20,100.20,Sul,Sofia Kowalski
+SO-1140,2026-01-03,Cadeira Ergonômica,6,19.10,114.60,114.60,Norte,Priya Herrera
+SO-1141,2026-03-24,Teclado Mecânico,7,72.07,504.49,504.49,Sul,Tomás Tanaka
+SO-1142,2026-04-20,Cadeira Ergonômica,1,124.59,124.59,124.59,Leste,Elena Cohen
+SO-1143,2026-04-22,Organizador de Cabos,4,156.06,624.24,624.24,Central,Omar Haddad
+SO-1144,2026-06-08,Mesa com Regulagem de Altura,7,209.76,1468.32,1468.32,Central,Elena Cohen
+SO-1145,2026-06-10,Webcam 1080p,4,156.38,625.52,625.52,Sul,Chen Bennett
+SO-1146,2026-02-17,Cadeira Ergonômica,1,160.51,160.51,160.51,Norte,Sofia Kowalski
+SO-1147,2026-01-08,Webcam 1080p,5,97.85,489.25,489.25,Oeste,Sofia Kowalski
+SO-1148,2026-06-09,Fones de Ouvido com Cancelamento de Ruído,7,154.63,1082.41,1082.41,Sul,Priya Herrera
+SO-1149,2026-06-04,Fones de Ouvido com Cancelamento de Ruído,3,151.96,455.88,455.88,Leste,Sofia Kowalski
+SO-1150,2026-04-27,27-inch Monitor,4,150.59,602.36,602.36,Central,Omar Haddad
+SO-1151,2026-03-25,Organizador de Cabos,3,52.27,156.81,156.81,Leste,Elena Cohen
+SO-1152,2026-04-13,Suporte para Notebook,1,48.08,48.08,48.08,Leste,Chen Bennett
+SO-1153,2026-03-18,Webcam 1080p,7,125.23,876.61,876.61,Sul,Omar Haddad
+SO-1154,2026-02-07,Cadeira Ergonômica,2,76.06,152.12,152.12,Oeste,Omar Haddad
+SO-1155,2026-03-21,Organizador de Cabos,5,177.09,885.45,885.45,Norte,Tomás Tanaka
+SO-1156,2026-03-23,Mesa com Regulagem de Altura,2,81.39,162.78,162.78,Norte,Elena Cohen
+SO-1157,2026-06-23,Suporte para Notebook,8,186.75,1494.00,1494.00,Oeste,Sofia Kowalski
+SO-1158,2026-01-24,Hub USB-C,5,105.75,528.75,528.75,Sul,Sofia Kowalski
+SO-1159,2026-03-12,Organizador de Cabos,1,166.85,166.85,166.85,Leste,Tomás Tanaka
+SO-1160,2026-01-23,Cadeira Ergonômica,4,84.28,337.12,337.12,Oeste,Priya Herrera
+SO-1161,2026-05-02,Luminária de Mesa,6,131.34,788.04,788.04,Sul,Priya Herrera
+SO-1162,2026-06-21,Cadeira Ergonômica,5,162.14,810.70,810.70,Oeste,Omar Haddad
+SO-1163,2026-03-23,Mouse sem Fio,3,202.78,608.34,608.34,Oeste,Sofia Kowalski
+SO-1164,2026-04-14,Hub USB-C,4,15.58,62.32,62.32,Leste,Tomás Tanaka
+SO-1165,2026-01-05,SSD Externo 1 TB,4,80.59,322.36,322.36,Norte,Chen Bennett
+SO-1166,2026-06-11,27-inch Monitor,8,82.73,661.84,661.84,Oeste,Chen Bennett
+SO-1167,2026-05-21,Webcam 1080p,4,20.57,82.28,82.28,Oeste,Chen Bennett
+SO-1168,2026-01-16,27-inch Monitor,5,26.98,134.90,134.90,Central,Sofia Kowalski
+SO-1169,2026-01-24,Webcam 1080p,7,216.51,1515.57,1515.57,Norte,Tomás Tanaka
+SO-1170,2026-05-06,Mesa com Regulagem de Altura,6,119.56,717.36,717.36,Central,Elena Cohen
+SO-1171,2026-03-21,Suporte para Notebook,6,67.73,406.38,406.38,Oeste,Chen Bennett
+SO-1172,2026-06-20,Fones de Ouvido com Cancelamento de Ruído,3,88.69,266.07,266.07,Oeste,Priya Herrera
+SO-1173,2026-05-20,Fones de Ouvido com Cancelamento de Ruído,7,17.85,124.95,124.95,Oeste,Elena Cohen
+SO-1174,2026-05-07,Webcam 1080p,2,100.99,201.98,201.98,Oeste,Priya Herrera
+SO-1175,2026-06-14,Teclado Mecânico,1,111.20,111.20,111.20,Central,Tomás Tanaka
+SO-1176,2026-03-03,27-inch Monitor,2,101.15,202.30,202.30,Sul,Elena Cohen
+SO-1177,2026-06-09,Hub USB-C,6,133.08,798.48,798.48,Oeste,Priya Herrera
+SO-1178,2026-02-26,Mesa com Regulagem de Altura,1,230.15,230.15,230.15,Leste,Omar Haddad
+SO-1179,2026-02-22,Luminária de Mesa,6,97.76,586.56,586.56,Oeste,Omar Haddad
+SO-1180,2026-05-14,Mesa com Regulagem de Altura,3,71.11,213.33,213.33,Leste,Sofia Kowalski
+SO-1181,2026-06-22,Suporte para Notebook,3,65.77,197.31,197.31,Sul,Priya Herrera
+SO-1182,2026-06-23,Suporte para Notebook,1,31.73,31.73,31.73,Oeste,Omar Haddad
+SO-1183,2026-03-15,Luminária de Mesa,8,99.49,795.92,795.92,Norte,Sofia Kowalski
+SO-1184,2026-06-16,SSD Externo 1 TB,2,221.17,442.34,442.34,Central,Tomás Tanaka
+SO-1185,2026-04-07,27-inch Monitor,2,67.08,134.16,134.16,Leste,Sofia Kowalski
+SO-1186,2026-02-04,Cadeira Ergonômica,6,33.50,201.00,201.00,Oeste,Tomás Tanaka
+SO-1187,2026-03-11,27-inch Monitor,5,50.20,251.00,251.00,Oeste,Chen Bennett
+SO-1188,2026-03-20,Hub USB-C,6,58.20,349.20,349.20,Leste,Elena Cohen
+SO-1189,2026-04-09,Hub USB-C,8,94.53,756.24,756.24,Leste,Priya Herrera
+SO-1190,2026-04-18,Fones de Ouvido com Cancelamento de Ruído,1,95.14,95.14,95.14,Oeste,Elena Cohen
+SO-1191,2026-05-14,Mouse sem Fio,4,166.53,666.12,666.12,Oeste,Priya Herrera
+SO-1192,2026-04-04,Webcam 1080p,7,80.18,561.26,561.26,Sul,Omar Haddad
+SO-1193,2026-03-03,Luminária de Mesa,4,225.85,903.40,903.40,Oeste,Elena Cohen
+SO-1194,2026-03-31,Organizador de Cabos,4,213.73,854.92,854.92,Oeste,Omar Haddad
+SO-1195,2026-01-02,Webcam 1080p,6,235.01,1410.06,1410.06,Norte,Sofia Kowalski
+SO-1196,2026-01-26,Mouse sem Fio,4,177.54,710.16,710.16,Central,Priya Herrera
+SO-1197,2026-01-02,Organizador de Cabos,6,210.80,1264.80,1264.80,Leste,Omar Haddad
+SO-1198,2026-03-18,Hub USB-C,1,10.10,10.10,10.10,Sul,Priya Herrera
+SO-1199,2026-01-16,Mouse sem Fio,8,192.08,1536.64,1536.64,Norte,Tomás Tanaka
+SO-1200,2026-01-04,Organizador de Cabos,6,134.68,808.08,808.08,Norte,Priya Herrera
+SO-1201,2026-03-03,SSD Externo 1 TB,4,24.02,96.08,96.08,Central,Chen Bennett
+SO-1202,2026-06-05,Suporte para Notebook,7,90.50,633.50,633.50,Leste,Elena Cohen
+SO-1203,2026-05-29,Fones de Ouvido com Cancelamento de Ruído,4,189.38,757.52,757.52,Oeste,Tomás Tanaka
+SO-1204,2026-01-16,Hub USB-C,6,102.39,614.34,614.34,Central,Priya Herrera
+SO-1205,2026-04-27,Fones de Ouvido com Cancelamento de Ruído,4,221.55,886.20,886.20,Sul,Chen Bennett
+SO-1206,2026-01-28,Hub USB-C,7,229.99,1609.93,1609.93,Sul,Tomás Tanaka
+SO-1207,2026-04-30,SSD Externo 1 TB,3,107.72,323.16,323.16,Norte,Priya Herrera
+SO-1208,2026-01-29,27-inch Monitor,3,25.74,77.22,77.22,Leste,Sofia Kowalski
+SO-1209,2026-04-08,Cadeira Ergonômica,3,165.15,495.45,495.45,Leste,Sofia Kowalski
+SO-1210,2026-01-31,Mesa com Regulagem de Altura,4,192.30,769.20,769.20,Leste,Priya Herrera
+SO-1211,2026-05-14,Luminária de Mesa,8,222.49,1779.92,1779.92,Central,Chen Bennett
+SO-1212,2026-06-20,Mesa com Regulagem de Altura,4,176.62,706.48,706.48,Sul,Elena Cohen
+SO-1213,2026-03-23,27-inch Monitor,4,19.88,79.52,79.52,Leste,Sofia Kowalski
+SO-1214,2026-01-10,Mouse sem Fio,6,80.46,482.76,482.76,Leste,Omar Haddad
+SO-1215,2026-04-10,Webcam 1080p,8,59.83,478.64,478.64,Norte,Tomás Tanaka
+SO-1216,2026-04-29,Suporte para Notebook,6,247.09,1482.54,1482.54,Central,Tomás Tanaka
+SO-1217,2026-02-02,Suporte para Notebook,8,75.78,606.24,606.24,Norte,Tomás Tanaka
+SO-1218,2026-04-13,Hub USB-C,8,84.20,673.60,673.60,Sul,Chen Bennett
+SO-1219,2026-06-21,Fones de Ouvido com Cancelamento de Ruído,6,176.53,1059.18,1059.18,Leste,Elena Cohen
+SO-1220,2026-04-25,Organizador de Cabos,1,41.52,41.52,41.52,Central,Elena Cohen
+SO-1221,2026-06-19,Teclado Mecânico,8,170.93,1367.44,1367.44,Sul,Priya Herrera
+SO-1222,2026-01-24,Mesa com Regulagem de Altura,6,95.04,570.24,570.24,Oeste,Priya Herrera
+SO-1223,2026-06-24,SSD Externo 1 TB,5,69.34,346.70,346.70,Central,Omar Haddad
+SO-1224,2026-04-29,Fones de Ouvido com Cancelamento de Ruído,6,84.34,506.04,506.04,Norte,Tomás Tanaka
+SO-1225,2026-03-02,Webcam 1080p,7,229.31,1605.17,1605.17,Leste,Elena Cohen
+SO-1226,2026-02-15,Mesa com Regulagem de Altura,6,94.56,567.36,567.36,Sul,Tomás Tanaka
+SO-1227,2026-03-21,27-inch Monitor,2,69.33,138.66,138.66,Oeste,Tomás Tanaka
+SO-1228,2026-04-07,27-inch Monitor,5,188.12,940.60,940.60,Central,Priya Herrera
+SO-1229,2026-06-28,Cadeira Ergonômica,1,246.25,246.25,246.25,Central,Priya Herrera
+SO-1230,2026-05-25,Webcam 1080p,3,112.88,338.64,338.64,Norte,Priya Herrera
+SO-1231,2026-06-14,Luminária de Mesa,1,231.32,231.32,231.32,Norte,Elena Cohen
+SO-1232,2026-06-18,Mesa com Regulagem de Altura,6,22.20,133.20,133.20,Sul,Tomás Tanaka
+SO-1233,2026-06-20,SSD Externo 1 TB,1,183.55,183.55,183.55,Oeste,Omar Haddad
+SO-1234,2026-03-23,Cadeira Ergonômica,3,108.90,326.70,326.70,Central,Sofia Kowalski
+SO-1235,2026-02-04,SSD Externo 1 TB,3,51.62,154.86,154.86,Norte,Elena Cohen
+SO-1236,2026-01-07,Cadeira Ergonômica,2,115.03,230.06,230.06,Oeste,Chen Bennett
+SO-1237,2026-06-18,Organizador de Cabos,8,208.40,1667.20,1667.20,Norte,Sofia Kowalski
+SO-1238,2026-05-25,Mouse sem Fio,2,137.09,274.18,274.18,Leste,Tomás Tanaka
+SO-1239,2026-05-15,Luminária de Mesa,6,163.43,980.58,980.58,Sul,Omar Haddad
+SO-1240,2026-04-04,Webcam 1080p,6,160.47,962.82,962.82,Central,Chen Bennett

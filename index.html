@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Análise de Vendas</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS Externo Separado -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- =========================================================================
+         MENU LATERAL (Sidebar de Navegação)
+         ========================================================================= -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-badge">
+                <i class="bi bi-bar-chart-fill text-white"></i>
+            </div>
+            <div class="logo-title">
+                <h1>Sales Analytics</h1>
+                <span>Painel Comercial</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-category">Navegação</div>
+            <a href="#visao-geral" class="nav-link-item active">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <span>Visão Geral</span>
+            </a>
+            <a href="#produtos" class="nav-link-item">
+                <i class="bi bi-box-seam-fill"></i>
+                <span>Análise de Produtos</span>
+            </a>
+            <a href="#vendedores" class="nav-link-item">
+                <i class="bi bi-people-fill"></i>
+                <span>Análise de Vendedores</span>
+            </a>
+            <a href="#regioes" class="nav-link-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Análise por Região</span>
+            </a>
+            <a href="#temporal" class="nav-link-item">
+                <i class="bi bi-calendar-event-fill"></i>
+                <span>Análise Temporal</span>
+            </a>
+            <a href="#tabela" class="nav-link-item">
+                <i class="bi bi-table"></i>
+                <span>Tabela Completa</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="badge-source">
+                <span class="status-dot"></span>
+                <div>
+                    <div>Fonte: <strong>vendas.csv</strong></div>
+                    <small>Template Estrutural</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- =========================================================================
+         ÁREA PRINCIPAL DO DASHBOARD
+         ========================================================================= -->
+    <div class="main-wrapper">
+        
+        <!-- Barra Superior (Topbar) -->
+        <header class="topbar">
+            <div class="topbar-info">
+                <h2>Dashboard de Análise de Vendas</h2>
+                <p>Interface estrutural para análise de desempenho comercial</p>
+            </div>
+            <div class="topbar-actions">
+                <div class="period-pill">
+                    <i class="bi bi-calendar3"></i>
+                    <span>Período Selecionado</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Corpo com as Seções Estruturadas -->
+        <main class="content-body">
+
+            <!-- =================================================================
+                 1. PÁGINA INICIAL — VISÃO GERAL
+                 ================================================================= -->
+            <section id="visao-geral" class="section-anchor">
+                <div class="section-title-wrap">
+                    <h3><i class="bi bi-speedometer2 text-primary"></i> Visão Geral</h3>
+                    <p>Indicadores consolidados do desempenho geral da loja.</p>
+                </div>
+
+                <!-- Cards de Indicadores (KPIs) -->
+                <div class="kpi-grid">
+                    <div class="kpi-card blue">
+                        <div class="kpi-icon-wrap">
+                            <i class="bi bi-currency-dollar"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <div class="kpi-label">Faturamento Total</div>
+                            <div class="kpi-value">$ --</div>
+                            <div class="kpi-meta">Receita total em dólares (USD)</div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card green">
+                        <div class="kpi-icon-wrap">
+                            <i class="bi bi-receipt"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <div class="kpi-label">Número de Pedidos</div>
+                            <div class="kpi-value">--</div>
+                            <div class="kpi-meta">Total de pedidos realizados</div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card amber">
+                        <div class="kpi-icon-wrap">
+                            <i class="bi bi-box"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <div class="kpi-label">Produtos Vendidos</div>
+                            <div class="kpi-value">--</div>
+                            <div class="kpi-meta">Quantidade total de itens</div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card cyan">
+                        <div class="kpi-icon-wrap">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <div class="kpi-label">Ticket Médio</div>
+                            <div class="kpi-value">$ --</div>
+                            <div class="kpi-meta">Média por pedido (USD)</div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card purple">
+                        <div class="kpi-icon-wrap">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <div class="kpi-label">Vendedores</div>
+                            <div class="kpi-value">--</div>
+                            <div class="kpi-meta">Quantidade de vendedores</div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card red">
+                        <div class="kpi-icon-wrap">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="kpi-data">
+                            <div class="kpi-label">Regiões Atendidas</div>
+                            <div class="kpi-value">--</div>
+                            <div class="kpi-meta">Quantidade de regiões</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Containers para Gráficos da Visão Geral -->
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-pie-chart text-primary"></i> Distribuição por Região</h4>
+                                <span class="card-pill">Gráfico</span>
+                            </div>
+                            <div class="chart-placeholder-box">
+                                <i class="bi bi-pie-chart chart-placeholder-icon"></i>
+                                <h5>Área do Gráfico de Regiões</h5>
+                                <p>Estrutura reservada para renderização do gráfico comparativo por região.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-graph-up text-primary"></i> Tendência Geral de Vendas</h4>
+                                <span class="card-pill">Gráfico</span>
+                            </div>
+                            <div class="chart-placeholder-box">
+                                <i class="bi bi-graph-up-arrow chart-placeholder-icon"></i>
+                                <h5>Área do Gráfico de Evolução</h5>
+                                <p>Estrutura reservada para renderização da linha de evolução geral de vendas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =================================================================
+                 2. ANÁLISE DE PRODUTOS
+                 ================================================================= -->
+            <section id="produtos" class="section-anchor">
+                <div class="section-title-wrap">
+                    <h3><i class="bi bi-box-seam text-primary"></i> Análise de Produtos</h3>
+                    <p>Estrutura para identificação dos produtos mais e menos vendidos e comparativo de receita.</p>
+                </div>
+
+                <!-- Cards de Destaque (Mais Vendidos / Menor Desempenho) -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-arrow-up-circle text-success"></i> Produtos Mais Vendidos</h4>
+                                <span class="card-pill">Destaque</span>
+                            </div>
+                            <div class="chart-placeholder-box">
+                                <i class="bi bi-trophy chart-placeholder-icon"></i>
+                                <h5>Container dos Produtos Líderes</h5>
+                                <p>Espaço destinado a exibir os produtos com maior volume de vendas e faturamento.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-arrow-down-circle text-danger"></i> Produtos com Menor Desempenho</h4>
+                                <span class="card-pill">Atenção</span>
+                            </div>
+                            <div class="chart-placeholder-box">
+                                <i class="bi bi-exclamation-triangle chart-placeholder-icon"></i>
+                                <h5>Container de Menor Saída</h5>
+                                <p>Espaço destinado a identificar produtos com menor faturamento e quantidade vendida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container do Gráfico Comparativo de Produtos -->
+                <div class="dash-card">
+                    <div class="dash-card-header">
+                        <h4><i class="bi bi-bar-chart-line text-primary"></i> Gráfico Comparativo de Produtos</h4>
+                        <span class="card-pill">Visualização</span>
+                    </div>
+                    <div class="chart-placeholder-box">
+                        <i class="bi bi-bar-chart-steps chart-placeholder-icon"></i>
+                        <h5>Área para Gráficos Comparativos</h5>
+                        <p>Estrutura reservada para exibição de gráfico de barras com faturamento e quantidade de cada produto.</p>
+                    </div>
+                </div>
+
+                <!-- Tabela de Produtos Cadastrados -->
+                <div class="dash-card">
+                    <div class="dash-card-header">
+                        <h4><i class="bi bi-list-check text-primary"></i> Relação de Produtos Cadastrados</h4>
+                        <span class="card-pill">Tabela</span>
+                    </div>
+                    <div class="table-responsive-custom">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Produto</th>
+                                    <th>Quantidade Vendida</th>
+                                    <th>Faturamento Individual (USD)</th>
+                                    <th>Status de Desempenho</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="table-empty-row">
+                                        <i class="bi bi-inbox"></i>
+                                        <span>Estrutura de tabela pronta para listagem dos produtos da base de dados.</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =================================================================
+                 3. ANÁLISE DE VENDEDORES
+                 ================================================================= -->
+            <section id="vendedores" class="section-anchor">
+                <div class="section-title-wrap">
+                    <h3><i class="bi bi-people text-primary"></i> Análise de Vendedores</h3>
+                    <p>Estrutura para comparação do faturamento individual e ranking de desempenho comercial.</p>
+                </div>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-lg-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-award text-primary"></i> Gráfico de Faturamento por Vendedor</h4>
+                                <span class="card-pill">Comparativo</span>
+                            </div>
+                            <div class="chart-placeholder-box">
+                                <i class="bi bi-bar-chart chart-placeholder-icon"></i>
+                                <h5>Gráfico de Faturamento</h5>
+                                <p>Estrutura reservada para o gráfico de barras comparando o faturamento de cada vendedor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-receipt text-primary"></i> Gráfico de Pedidos por Vendedor</h4>
+                                <span class="card-pill">Volume</span>
+                            </div>
+                            <div class="chart-placeholder-box">
+                                <i class="bi bi-pie-chart chart-placeholder-icon"></i>
+                                <h5>Gráfico de Pedidos Realizados</h5>
+                                <p>Estrutura reservada para visualização do volume total de pedidos por vendedor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabela de Ranking de Vendedores -->
+                <div class="dash-card">
+                    <div class="dash-card-header">
+                        <h4><i class="bi bi-trophy text-primary"></i> Ranking de Desempenho dos Vendedores</h4>
+                        <span class="card-pill">Ranking</span>
+                    </div>
+                    <div class="table-responsive-custom">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Posição</th>
+                                    <th>Vendedor</th>
+                                    <th>Total de Vendas / Pedidos</th>
+                                    <th>Faturamento Individual (USD)</th>
+                                    <th>Classificação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="table-empty-row">
+                                        <i class="bi bi-inbox"></i>
+                                        <span>Estrutura de tabela pronta para exibição do ranking dos vendedores.</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =================================================================
+                 4. ANÁLISE POR REGIÃO
+                 ================================================================= -->
+            <section id="regioes" class="section-anchor">
+                <div class="section-title-wrap">
+                    <h3><i class="bi bi-geo-alt text-primary"></i> Análise por Região</h3>
+                    <p>Estrutura para distribuição de faturamento e volume de pedidos por região geográfica.</p>
+                </div>
+
+                <!-- Cards Representativos por Região -->
+                <div class="cards-region-grid">
+                    <div class="region-box">
+                        <div class="region-badge-icon">🏙️</div>
+                        <h5>Região 1</h5>
+                        <div class="region-total">$ --</div>
+                        <div class="region-share">-- % do faturamento</div>
+                        <div class="text-muted small mt-1">-- pedidos</div>
+                    </div>
+
+                    <div class="region-box">
+                        <div class="region-badge-icon">🌐</div>
+                        <h5>Região 2</h5>
+                        <div class="region-total">$ --</div>
+                        <div class="region-share">-- % do faturamento</div>
+                        <div class="text-muted small mt-1">-- pedidos</div>
+                    </div>
+
+                    <div class="region-box">
+                        <div class="region-badge-icon">🌅</div>
+                        <h5>Região 3</h5>
+                        <div class="region-total">$ --</div>
+                        <div class="region-share">-- % do faturamento</div>
+                        <div class="text-muted small mt-1">-- pedidos</div>
+                    </div>
+
+                    <div class="region-box">
+                        <div class="region-badge-icon">🌲</div>
+                        <h5>Região 4</h5>
+                        <div class="region-total">$ --</div>
+                        <div class="region-share">-- % do faturamento</div>
+                        <div class="text-muted small mt-1">-- pedidos</div>
+                    </div>
+
+                    <div class="region-box">
+                        <div class="region-badge-icon">🏖️</div>
+                        <h5>Região 5</h5>
+                        <div class="region-total">$ --</div>
+                        <div class="region-share">-- % do faturamento</div>
+                        <div class="text-muted small mt-1">-- pedidos</div>
+                    </div>
+                </div>
+
+                <!-- Gráfico Comparativo Regional -->
+                <div class="dash-card">
+                    <div class="dash-card-header">
+                        <h4><i class="bi bi-map text-primary"></i> Gráfico Comparativo por Região</h4>
+                        <span class="card-pill">Gráfico</span>
+                    </div>
+                    <div class="chart-placeholder-box">
+                        <i class="bi bi-bar-chart-steps chart-placeholder-icon"></i>
+                        <h5>Área do Gráfico Regional</h5>
+                        <p>Estrutura reservada para comparação visual do faturamento e quantidade de pedidos por região.</p>
+                    </div>
+                </div>
+
+                <!-- Tabela de Regiões -->
+                <div class="dash-card">
+                    <div class="dash-card-header">
+                        <h4><i class="bi bi-table text-primary"></i> Detalhamento Regional de Vendas</h4>
+                        <span class="card-pill">Tabela</span>
+                    </div>
+                    <div class="table-responsive-custom">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Região</th>
+                                    <th>Faturamento Total (USD)</th>
+                                    <th>Quantidade de Pedidos</th>
+                                    <th>Participação Percentual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" class="table-empty-row">
+                                        <i class="bi bi-inbox"></i>
+                                        <span>Estrutura de tabela pronta para receber as regiões da base de dados.</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =================================================================
+                 5. ANÁLISE TEMPORAL
+                 ================================================================= -->
+            <section id="temporal" class="section-anchor">
+                <div class="section-title-wrap">
+                    <h3><i class="bi bi-calendar3 text-primary"></i> Análise Temporal</h3>
+                    <p>Estrutura para acompanhamento da evolução das vendas ao longo do tempo e períodos mensais.</p>
+                </div>
+
+                <!-- Destaques Temporais (Maior e Menor Faturamento) -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-arrow-up-right-circle text-success"></i> Mês com Maior Faturamento</h4>
+                                <span class="card-pill">Pico</span>
+                            </div>
+                            <div class="kpi-card green" style="box-shadow: none; border: none; padding: 0;">
+                                <div class="kpi-data">
+                                    <div class="kpi-label">Período de Pico</div>
+                                    <div class="kpi-value">Mês / Ano</div>
+                                    <div class="kpi-meta">Maior faturamento mensal registrado</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="dash-card h-100">
+                            <div class="dash-card-header">
+                                <h4><i class="bi bi-arrow-down-right-circle text-danger"></i> Mês com Menor Faturamento</h4>
+                                <span class="card-pill">Mínimo</span>
+                            </div>
+                            <div class="kpi-card red" style="box-shadow: none; border: none; padding: 0;">
+                                <div class="kpi-data">
+                                    <div class="kpi-label">Período de Menor Faturamento</div>
+                                    <div class="kpi-value">Mês / Ano</div>
+                                    <div class="kpi-meta">Menor faturamento mensal registrado</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gráfico de Evolução ao Longo do Tempo -->
+                <div class="dash-card">
+                    <div class="dash-card-header">
+                        <h4><i class="bi bi-graph-up-arrow text-primary"></i> Gráfico de Evolução Mensal do Faturamento</h4>
+                        <span class="card-pill">Linha do Tempo</span>
+                    </div>
+                    <div class="chart-placeholder-box">
+                        <i class="bi bi-graph-up chart-placeholder-icon"></i>
+                        <h5>Área do Gráfico de Evolução Temporal</h5>
+                        <p>Estrutura reservada para gráfico de linha com evolução de crescimento ou queda das vendas.</p>
+                    </div>
+                </div>
+
+                <!-- Tabela de Comparativo Mensal -->
+                <div class="dash-card">
+                    <div class="dash-card-header">
+                        <h4><i class="bi bi-calendar-check text-primary"></i> Comparativo Mensal de Vendas</h4>
+                        <span class="card-pill">Histórico</span>
+                    </div>
+                    <div class="table-responsive-custom">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Mês / Período</th>
+                                    <th>Faturamento Mensal (USD)</th>
+                                    <th>Total de Pedidos</th>
+                                    <th>Quantidade Vendida</th>
+                                    <th>Evolução (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="table-empty-row">
+                                        <i class="bi bi-inbox"></i>
+                                        <span>Estrutura de tabela pronta para receber os períodos mensais tratados.</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =================================================================
+                 6. TABELA COMPLETA DE VENDAS
+                 ================================================================= -->
+            <section id="tabela" class="section-anchor">
+                <div class="section-title-wrap">
+                    <h3><i class="bi bi-table text-primary"></i> Tabela Completa de Vendas</h3>
+                    <p>Estrutura para exibição de todos os registros da base de dados, com filtros de busca e paginação.</p>
+                </div>
+
+                <div class="dash-card">
+                    <!-- Formulário de Filtros e Pesquisa Estruturado -->
+                    <div class="filters-container">
+                        <div class="filter-item search-full">
+                            <label class="filter-label">Pesquisa</label>
+                            <input type="text" class="custom-input" placeholder="Pesquisar por produto, vendedor, região ou ID...">
+                        </div>
+
+                        <div class="filter-item">
+                            <label class="filter-label">Filtrar por Produto</label>
+                            <select class="custom-select">
+                                <option value="">Todos os produtos</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-item">
+                            <label class="filter-label">Filtrar por Vendedor</label>
+                            <select class="custom-select">
+                                <option value="">Todos os vendedores</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-item">
+                            <label class="filter-label">Filtrar por Região</label>
+                            <select class="custom-select">
+                                <option value="">Todas as regiões</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-item">
+                            <label class="filter-label">Período Inicial</label>
+                            <input type="date" class="custom-input">
+                        </div>
+
+                        <div class="filter-item">
+                            <label class="filter-label">Período Final</label>
+                            <input type="date" class="custom-input">
+                        </div>
+
+                        <div class="filter-item">
+                            <button type="button" class="btn-filter-action">
+                                <i class="bi bi-funnel"></i> Filtrar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tabela com Todas as 9 Colunas Exigidas -->
+                    <div class="table-responsive-custom">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>ID Pedido</th>
+                                    <th>Data Venda</th>
+                                    <th>Produto</th>
+                                    <th>Quantidade</th>
+                                    <th>Preço Unitário (USD)</th>
+                                    <th>Total Venda (USD)</th>
+                                    <th>Faturamento (USD)</th>
+                                    <th>Região</th>
+                                    <th>Vendedor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="9" class="table-empty-row">
+                                        <i class="bi bi-database"></i>
+                                        <span>Estrutura de tabela com as 9 colunas pronta para receber os registros do vendas.csv.</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Estrutura de Paginação -->
+                    <div class="pagination-container">
+                        <div class="pagination-info">
+                            Exibindo registros da base de dados
+                        </div>
+                        <div class="pagination-buttons">
+                            <span class="page-link-btn"><i class="bi bi-chevron-left"></i></span>
+                            <span class="page-link-btn active">1</span>
+                            <span class="page-link-btn">2</span>
+                            <span class="page-link-btn">3</span>
+                            <span class="page-link-btn"><i class="bi bi-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
