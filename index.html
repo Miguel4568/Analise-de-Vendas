@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard de Análise de Vendas</title>
 
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Google Fonts: Inter -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Arquivo CSS Externo Separado -->
+
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
 
-    <!-- =========================================================================
-         MENU LATERAL (Sidebar de Navegação)
-         ========================================================================= -->
     <aside class="sidebar">
         <div class="sidebar-header">
             <div class="logo-badge">
@@ -69,12 +67,8 @@
         </div>
     </aside>
 
-    <!-- =========================================================================
-         ÁREA PRINCIPAL DO DASHBOARD
-         ========================================================================= -->
     <div class="main-wrapper">
-        
-        <!-- Barra Superior (Topbar) -->
+
         <header class="topbar">
             <div class="topbar-info">
                 <h2>Dashboard de Análise de Vendas</h2>
@@ -88,19 +82,14 @@
             </div>
         </header>
 
-        <!-- Corpo com as Seções Estruturadas -->
         <main class="content-body">
 
-            <!-- =================================================================
-                 1. PÁGINA INICIAL — VISÃO GERAL
-                 ================================================================= -->
             <section id="visao-geral" class="section-anchor">
                 <div class="section-title-wrap">
                     <h3><i class="bi bi-speedometer2 text-primary"></i> Visão Geral</h3>
                     <p>Indicadores consolidados do desempenho geral da loja.</p>
                 </div>
 
-                <!-- Cards de Indicadores (KPIs) -->
                 <div class="kpi-grid">
                     <div class="kpi-card blue">
                         <div class="kpi-icon-wrap">
@@ -169,7 +158,6 @@
                     </div>
                 </div>
 
-                <!-- Containers para Gráficos da Visão Geral -->
                 <div class="row g-3">
                     <div class="col-lg-6">
                         <div class="dash-card h-100">
@@ -201,16 +189,12 @@
                 </div>
             </section>
 
-            <!-- =================================================================
-                 2. ANÁLISE DE PRODUTOS
-                 ================================================================= -->
             <section id="produtos" class="section-anchor">
                 <div class="section-title-wrap">
                     <h3><i class="bi bi-box-seam text-primary"></i> Análise de Produtos</h3>
                     <p>Estrutura para identificação dos produtos mais e menos vendidos e comparativo de receita.</p>
                 </div>
 
-                <!-- Cards de Destaque (Mais Vendidos / Menor Desempenho) -->
                 <div class="row g-3 mb-4">
                     <div class="col-md-6">
                         <div class="dash-card h-100">
@@ -229,19 +213,20 @@
                     <div class="col-md-6">
                         <div class="dash-card h-100">
                             <div class="dash-card-header">
-                                <h4><i class="bi bi-arrow-down-circle text-danger"></i> Produtos com Menor Desempenho</h4>
+                                <h4><i class="bi bi-arrow-down-circle text-danger"></i> Produtos com Menor Desempenho
+                                </h4>
                                 <span class="card-pill">Atenção</span>
                             </div>
                             <div class="chart-placeholder-box">
                                 <i class="bi bi-exclamation-triangle chart-placeholder-icon"></i>
                                 <h5>Container de Menor Saída</h5>
-                                <p>Espaço destinado a identificar produtos com menor faturamento e quantidade vendida.</p>
+                                <p>Espaço destinado a identificar produtos com menor faturamento e quantidade vendida.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Container do Gráfico Comparativo de Produtos -->
                 <div class="dash-card">
                     <div class="dash-card-header">
                         <h4><i class="bi bi-bar-chart-line text-primary"></i> Gráfico Comparativo de Produtos</h4>
@@ -250,11 +235,11 @@
                     <div class="chart-placeholder-box">
                         <i class="bi bi-bar-chart-steps chart-placeholder-icon"></i>
                         <h5>Área para Gráficos Comparativos</h5>
-                        <p>Estrutura reservada para exibição de gráfico de barras com faturamento e quantidade de cada produto.</p>
+                        <p>Estrutura reservada para exibição de gráfico de barras com faturamento e quantidade de cada
+                            produto.</p>
                     </div>
                 </div>
 
-                <!-- Tabela de Produtos Cadastrados -->
                 <div class="dash-card">
                     <div class="dash-card-header">
                         <h4><i class="bi bi-list-check text-primary"></i> Relação de Produtos Cadastrados</h4>
@@ -275,7 +260,8 @@
                                 <tr>
                                     <td colspan="5" class="table-empty-row">
                                         <i class="bi bi-inbox"></i>
-                                        <span>Estrutura de tabela pronta para listagem dos produtos da base de dados.</span>
+                                        <span>Estrutura de tabela pronta para listagem dos produtos da base de
+                                            dados.</span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -284,9 +270,6 @@
                 </div>
             </section>
 
-            <!-- =================================================================
-                 3. ANÁLISE DE VENDEDORES
-                 ================================================================= -->
             <section id="vendedores" class="section-anchor">
                 <div class="section-title-wrap">
                     <h3><i class="bi bi-people text-primary"></i> Análise de Vendedores</h3>
@@ -303,7 +286,8 @@
                             <div class="chart-placeholder-box">
                                 <i class="bi bi-bar-chart chart-placeholder-icon"></i>
                                 <h5>Gráfico de Faturamento</h5>
-                                <p>Estrutura reservada para o gráfico de barras comparando o faturamento de cada vendedor.</p>
+                                <p>Estrutura reservada para o gráfico de barras comparando o faturamento de cada
+                                    vendedor.</p>
                             </div>
                         </div>
                     </div>
@@ -323,7 +307,6 @@
                     </div>
                 </div>
 
-                <!-- Tabela de Ranking de Vendedores -->
                 <div class="dash-card">
                     <div class="dash-card-header">
                         <h4><i class="bi bi-trophy text-primary"></i> Ranking de Desempenho dos Vendedores</h4>
@@ -353,16 +336,12 @@
                 </div>
             </section>
 
-            <!-- =================================================================
-                 4. ANÁLISE POR REGIÃO
-                 ================================================================= -->
             <section id="regioes" class="section-anchor">
                 <div class="section-title-wrap">
                     <h3><i class="bi bi-geo-alt text-primary"></i> Análise por Região</h3>
                     <p>Estrutura para distribuição de faturamento e volume de pedidos por região geográfica.</p>
                 </div>
 
-                <!-- Cards Representativos por Região -->
                 <div class="cards-region-grid">
                     <div class="region-box">
                         <div class="region-badge-icon">🏙️</div>
@@ -405,7 +384,6 @@
                     </div>
                 </div>
 
-                <!-- Gráfico Comparativo Regional -->
                 <div class="dash-card">
                     <div class="dash-card-header">
                         <h4><i class="bi bi-map text-primary"></i> Gráfico Comparativo por Região</h4>
@@ -414,11 +392,11 @@
                     <div class="chart-placeholder-box">
                         <i class="bi bi-bar-chart-steps chart-placeholder-icon"></i>
                         <h5>Área do Gráfico Regional</h5>
-                        <p>Estrutura reservada para comparação visual do faturamento e quantidade de pedidos por região.</p>
+                        <p>Estrutura reservada para comparação visual do faturamento e quantidade de pedidos por região.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Tabela de Regiões -->
                 <div class="dash-card">
                     <div class="dash-card-header">
                         <h4><i class="bi bi-table text-primary"></i> Detalhamento Regional de Vendas</h4>
@@ -438,7 +416,8 @@
                                 <tr>
                                     <td colspan="4" class="table-empty-row">
                                         <i class="bi bi-inbox"></i>
-                                        <span>Estrutura de tabela pronta para receber as regiões da base de dados.</span>
+                                        <span>Estrutura de tabela pronta para receber as regiões da base de
+                                            dados.</span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -447,21 +426,18 @@
                 </div>
             </section>
 
-            <!-- =================================================================
-                 5. ANÁLISE TEMPORAL
-                 ================================================================= -->
             <section id="temporal" class="section-anchor">
                 <div class="section-title-wrap">
                     <h3><i class="bi bi-calendar3 text-primary"></i> Análise Temporal</h3>
                     <p>Estrutura para acompanhamento da evolução das vendas ao longo do tempo e períodos mensais.</p>
                 </div>
 
-                <!-- Destaques Temporais (Maior e Menor Faturamento) -->
                 <div class="row g-3 mb-4">
                     <div class="col-md-6">
                         <div class="dash-card h-100">
                             <div class="dash-card-header">
-                                <h4><i class="bi bi-arrow-up-right-circle text-success"></i> Mês com Maior Faturamento</h4>
+                                <h4><i class="bi bi-arrow-up-right-circle text-success"></i> Mês com Maior Faturamento
+                                </h4>
                                 <span class="card-pill">Pico</span>
                             </div>
                             <div class="kpi-card green" style="box-shadow: none; border: none; padding: 0;">
@@ -477,7 +453,8 @@
                     <div class="col-md-6">
                         <div class="dash-card h-100">
                             <div class="dash-card-header">
-                                <h4><i class="bi bi-arrow-down-right-circle text-danger"></i> Mês com Menor Faturamento</h4>
+                                <h4><i class="bi bi-arrow-down-right-circle text-danger"></i> Mês com Menor Faturamento
+                                </h4>
                                 <span class="card-pill">Mínimo</span>
                             </div>
                             <div class="kpi-card red" style="box-shadow: none; border: none; padding: 0;">
@@ -491,20 +468,20 @@
                     </div>
                 </div>
 
-                <!-- Gráfico de Evolução ao Longo do Tempo -->
                 <div class="dash-card">
                     <div class="dash-card-header">
-                        <h4><i class="bi bi-graph-up-arrow text-primary"></i> Gráfico de Evolução Mensal do Faturamento</h4>
+                        <h4><i class="bi bi-graph-up-arrow text-primary"></i> Gráfico de Evolução Mensal do Faturamento
+                        </h4>
                         <span class="card-pill">Linha do Tempo</span>
                     </div>
                     <div class="chart-placeholder-box">
                         <i class="bi bi-graph-up chart-placeholder-icon"></i>
                         <h5>Área do Gráfico de Evolução Temporal</h5>
-                        <p>Estrutura reservada para gráfico de linha com evolução de crescimento ou queda das vendas.</p>
+                        <p>Estrutura reservada para gráfico de linha com evolução de crescimento ou queda das vendas.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Tabela de Comparativo Mensal -->
                 <div class="dash-card">
                     <div class="dash-card-header">
                         <h4><i class="bi bi-calendar-check text-primary"></i> Comparativo Mensal de Vendas</h4>
@@ -525,7 +502,8 @@
                                 <tr>
                                     <td colspan="5" class="table-empty-row">
                                         <i class="bi bi-inbox"></i>
-                                        <span>Estrutura de tabela pronta para receber os períodos mensais tratados.</span>
+                                        <span>Estrutura de tabela pronta para receber os períodos mensais
+                                            tratados.</span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -534,21 +512,19 @@
                 </div>
             </section>
 
-            <!-- =================================================================
-                 6. TABELA COMPLETA DE VENDAS
-                 ================================================================= -->
             <section id="tabela" class="section-anchor">
                 <div class="section-title-wrap">
                     <h3><i class="bi bi-table text-primary"></i> Tabela Completa de Vendas</h3>
-                    <p>Estrutura para exibição de todos os registros da base de dados, com filtros de busca e paginação.</p>
+                    <p>Estrutura para exibição de todos os registros da base de dados, com filtros de busca e paginação.
+                    </p>
                 </div>
 
                 <div class="dash-card">
-                    <!-- Formulário de Filtros e Pesquisa Estruturado -->
                     <div class="filters-container">
                         <div class="filter-item search-full">
                             <label class="filter-label">Pesquisa</label>
-                            <input type="text" class="custom-input" placeholder="Pesquisar por produto, vendedor, região ou ID...">
+                            <input type="text" class="custom-input"
+                                placeholder="Pesquisar por produto, vendedor, região ou ID...">
                         </div>
 
                         <div class="filter-item">
@@ -589,7 +565,6 @@
                         </div>
                     </div>
 
-                    <!-- Tabela com Todas as 9 Colunas Exigidas -->
                     <div class="table-responsive-custom">
                         <table class="custom-table">
                             <thead>
@@ -609,14 +584,14 @@
                                 <tr>
                                     <td colspan="9" class="table-empty-row">
                                         <i class="bi bi-database"></i>
-                                        <span>Estrutura de tabela com as 9 colunas pronta para receber os registros do vendas.csv.</span>
+                                        <span>Estrutura de tabela com as 9 colunas pronta para receber os registros do
+                                            vendas.csv.</span>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <!-- Estrutura de Paginação -->
                     <div class="pagination-container">
                         <div class="pagination-info">
                             Exibindo registros da base de dados
@@ -636,4 +611,5 @@
     </div>
 
 </body>
+
 </html>
