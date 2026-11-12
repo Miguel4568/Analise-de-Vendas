@@ -1,7 +1,3 @@
-// =============================================================
-//  main.js — Interações do Dashboard de Análise de Vendas
-// =============================================================
-
 document.addEventListener('DOMContentLoaded', () => {
     initSidebarNav();
     initMobileMenu();
@@ -10,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initFilterSearch();
 });
 
-// =============================================================
-//  NAVEGAÇÃO SIDEBAR — destaca o link ativo ao clicar
-// =============================================================
 function initSidebarNav() {
     const links = document.querySelectorAll('.nav-link-item');
 
@@ -21,18 +14,13 @@ function initSidebarNav() {
             links.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
 
-            // Fechar menu mobile ao navegar
             const sidebar = document.querySelector('.sidebar');
             if (sidebar) sidebar.classList.remove('open');
         });
     });
 }
 
-// =============================================================
-//  MENU MOBILE — toggle da sidebar em telas pequenas
-// =============================================================
 function initMobileMenu() {
-    // Cria botão hamburger dinamicamente
     const topbar = document.querySelector('.topbar');
     if (!topbar) return;
 
@@ -54,19 +42,16 @@ function initMobileMenu() {
     `;
     topbar.prepend(btn);
 
-    // Mostra o botão só em mobile via media query
     const mq = window.matchMedia('(max-width: 768px)');
     const toggle = () => { btn.style.display = mq.matches ? 'block' : 'none'; };
     toggle();
     mq.addEventListener('change', toggle);
 
-    // Toggle da sidebar
     btn.addEventListener('click', () => {
         const sidebar = document.querySelector('.sidebar');
         if (sidebar) sidebar.classList.toggle('open');
     });
 
-    // Fechar ao clicar fora da sidebar
     document.addEventListener('click', (e) => {
         const sidebar = document.querySelector('.sidebar');
         if (!sidebar) return;
@@ -76,9 +61,6 @@ function initMobileMenu() {
     });
 }
 
-// =============================================================
-//  SMOOTH SCROLL — rola suavemente até a seção
-// =============================================================
 function initSmoothScroll() {
     document.querySelectorAll('.nav-link-item').forEach(link => {
         link.addEventListener('click', (e) => {
@@ -94,9 +76,6 @@ function initSmoothScroll() {
     });
 }
 
-// =============================================================
-//  SCROLL SPY — atualiza link ativo conforme a seção visível
-// =============================================================
 function initScrollSpy() {
     const sections = document.querySelectorAll('.section-anchor');
     const links = document.querySelectorAll('.nav-link-item');
@@ -123,22 +102,17 @@ function initScrollSpy() {
     sections.forEach(section => observer.observe(section));
 }
 
-// =============================================================
-//  FILTRO DE BUSCA — filtragem em tempo real na tabela
-// =============================================================
 function initFilterSearch() {
     const searchInput = document.querySelector('.filter-item.search-full .custom-input');
-    const filterBtn   = document.querySelector('.btn-filter-action');
-    const tableBody   = document.querySelector('#tabela .custom-table tbody');
+    const filterBtn = document.querySelector('.btn-filter-action');
+    const tableBody = document.querySelector('#tabela .custom-table tbody');
 
     if (!searchInput || !tableBody) return;
 
-    // Busca em tempo real (digitar)
     searchInput.addEventListener('input', () => {
         applyFilters(tableBody, searchInput);
     });
 
-    // Botão Filtrar
     if (filterBtn) {
         filterBtn.addEventListener('click', () => {
             applyFilters(tableBody, searchInput);
@@ -152,7 +126,6 @@ function applyFilters(tableBody, searchInput) {
     let visibleCount = 0;
 
     rows.forEach(row => {
-        // Ignora linha de placeholder/vazio
         if (row.querySelector('.table-empty-row')) return;
 
         const text = row.textContent.toLowerCase();
@@ -161,7 +134,6 @@ function applyFilters(tableBody, searchInput) {
         if (show) visibleCount++;
     });
 
-    // Mensagem de "sem resultados"
     let noResultsRow = tableBody.querySelector('.no-results-row');
     if (!visibleCount && query) {
         if (!noResultsRow) {
