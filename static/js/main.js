@@ -107,6 +107,80 @@ function renderizarGraficos(dados) {
         });
     }
 
+    const ctxMelhores = document.getElementById('chart-produtos-melhores');
+    if (ctxMelhores && dados.destaques_produtos && dados.destaques_produtos.melhores) {
+        const melhores = dados.destaques_produtos.melhores;
+        new Chart(ctxMelhores, {
+            type: 'bar',
+            data: {
+                labels: melhores.map(p => p.produto),
+                datasets: [{
+                    label: 'Faturamento (USD)',
+                    data: melhores.map(p => p.faturamento),
+                    backgroundColor: ['#22c55e', '#16a34a', '#4ade80'],
+                    borderRadius: 6,
+                }],
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: ctx => ` ${fmtUSD(ctx.parsed.x)}`,
+                        },
+                    },
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            callback: v => '$ ' + Number(v).toLocaleString('pt-BR'),
+                        },
+                    },
+                },
+            },
+        });
+    }
+
+    const ctxPiores = document.getElementById('chart-produtos-piores');
+    if (ctxPiores && dados.destaques_produtos && dados.destaques_produtos.piores) {
+        const piores = dados.destaques_produtos.piores;
+        new Chart(ctxPiores, {
+            type: 'bar',
+            data: {
+                labels: piores.map(p => p.produto),
+                datasets: [{
+                    label: 'Faturamento (USD)',
+                    data: piores.map(p => p.faturamento),
+                    backgroundColor: ['#ef4444', '#f87171', '#fca5a5'],
+                    borderRadius: 6,
+                }],
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: ctx => ` ${fmtUSD(ctx.parsed.x)}`,
+                        },
+                    },
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            callback: v => '$ ' + Number(v).toLocaleString('pt-BR'),
+                        },
+                    },
+                },
+            },
+        });
+    }
+
     const ctxProdutos = document.getElementById('chart-comparativo-produtos');
     if (ctxProdutos && dados.produtos) {
         new Chart(ctxProdutos, {
@@ -346,10 +420,11 @@ function preencherPicos(picos) {
 
 function preencherDestaquesProds(destaques) {
     if (!destaques) return;
-    const boxes = document.querySelectorAll('#produtos .chart-placeholder-box');
+    const boxMelhores = document.getElementById('destaque-melhores');
+    const boxPiores = document.getElementById('destaque-piores');
 
     function renderDestaque(box, lista, tipo) {
-        if (!box) return;
+        if (!box || !lista) return;
         box.innerHTML = lista.map(p => `
             <div class="destaque-item ${tipo}">
                 <span class="destaque-rank">#${p.ranking}</span>
@@ -358,8 +433,8 @@ function preencherDestaquesProds(destaques) {
             </div>`).join('');
     }
 
-    renderDestaque(boxes[0], destaques.melhores, 'top');
-    renderDestaque(boxes[1], destaques.piores, 'low');
+    renderDestaque(boxMelhores, destaques.melhores, 'top');
+    renderDestaque(boxPiores, destaques.piores, 'low');
 }
 
 function preencherTabelaProdutos(produtos) {

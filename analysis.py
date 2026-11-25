@@ -248,7 +248,7 @@ def atualizar_html(df: pd.DataFrame, caminho_html: str = HTML_PATH) -> str:
     linhas_temporal_list = []
     for t in tabela_temporal(df):
         evo = t["evolucao_pct"]
-        if evo is None:
+        if evo is None or pd.isna(evo):
             evo_html = "—"
         elif evo >= 0:
             evo_html = f'<span class="text-success">▲ {abs(evo):.1f} %</span>'
