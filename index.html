@@ -165,10 +165,8 @@
                                 <h4><i class="bi bi-pie-chart text-primary"></i> Distribuição por Região</h4>
                                 <span class="card-pill">Gráfico</span>
                             </div>
-                            <div class="chart-placeholder-box">
-                                <i class="bi bi-pie-chart chart-placeholder-icon"></i>
-                                <h5>Área do Gráfico de Regiões</h5>
-                                <p>Estrutura reservada para renderização do gráfico comparativo por região.</p>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="chart-distribuicao-regiao"></canvas>
                             </div>
                         </div>
                     </div>
@@ -179,10 +177,8 @@
                                 <h4><i class="bi bi-graph-up text-primary"></i> Tendência Geral de Vendas</h4>
                                 <span class="card-pill">Gráfico</span>
                             </div>
-                            <div class="chart-placeholder-box">
-                                <i class="bi bi-graph-up-arrow chart-placeholder-icon"></i>
-                                <h5>Área do Gráfico de Evolução</h5>
-                                <p>Estrutura reservada para renderização da linha de evolução geral de vendas.</p>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="chart-tendencia-geral"></canvas>
                             </div>
                         </div>
                     </div>
@@ -232,11 +228,8 @@
                         <h4><i class="bi bi-bar-chart-line text-primary"></i> Gráfico Comparativo de Produtos</h4>
                         <span class="card-pill">Visualização</span>
                     </div>
-                    <div class="chart-placeholder-box">
-                        <i class="bi bi-bar-chart-steps chart-placeholder-icon"></i>
-                        <h5>Área para Gráficos Comparativos</h5>
-                        <p>Estrutura reservada para exibição de gráfico de barras com faturamento e quantidade de cada
-                            produto.</p>
+                    <div class="chart-container" style="position: relative; height: 380px;">
+                        <canvas id="chart-comparativo-produtos"></canvas>
                     </div>
                 </div>
 
@@ -256,14 +249,19 @@
                                     <th>Status de Desempenho</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="5" class="table-empty-row">
-                                        <i class="bi bi-inbox"></i>
-                                        <span>Estrutura de tabela pronta para listagem dos produtos da base de
-                                            dados.</span>
-                                    </td>
-                                </tr>
+                            <tbody id="tbody-produtos">
+                                <tr><td>1</td><td>Suporte para Notebook</td><td>133</td><td>$ 18.713,90</td><td><span class="badge-status top">Destaque</span></td></tr>
+                                <tr><td>2</td><td>Webcam 1080p</td><td>122</td><td>$ 16.809,84</td><td><span class="badge-status top">Destaque</span></td></tr>
+                                <tr><td>3</td><td>Organizador de Cabos</td><td>113</td><td>$ 16.142,37</td><td><span class="badge-status top">Destaque</span></td></tr>
+                                <tr><td>4</td><td>Mouse sem Fio</td><td>102</td><td>$ 14.290,77</td><td><span class="badge-status top">Destaque</span></td></tr>
+                                <tr><td>5</td><td>SSD Externo 1 TB</td><td>97</td><td>$ 12.103,90</td><td><span class="badge-status mid">Regular</span></td></tr>
+                                <tr><td>6</td><td>Fones de Ouvido com Cancelamento de Ruído</td><td>79</td><td>$ 10.674,32</td><td><span class="badge-status mid">Regular</span></td></tr>
+                                <tr><td>7</td><td>Cadeira Ergonômica</td><td>98</td><td>$ 10.624,93</td><td><span class="badge-status mid">Regular</span></td></tr>
+                                <tr><td>8</td><td>Luminária de Mesa</td><td>71</td><td>$ 10.445,80</td><td><span class="badge-status mid">Regular</span></td></tr>
+                                <tr><td>9</td><td>Teclado Mecânico</td><td>75</td><td>$ 9.513,33</td><td><span class="badge-status low">Baixo</span></td></tr>
+                                <tr><td>10</td><td>27-inch Monitor</td><td>76</td><td>$ 8.509,33</td><td><span class="badge-status low">Baixo</span></td></tr>
+                                <tr><td>11</td><td>Hub USB-C</td><td>77</td><td>$ 8.082,10</td><td><span class="badge-status low">Baixo</span></td></tr>
+                                <tr><td>12</td><td>Mesa com Regulagem de Altura</td><td>65</td><td>$ 6.526,55</td><td><span class="badge-status low">Baixo</span></td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -283,11 +281,8 @@
                                 <h4><i class="bi bi-award text-primary"></i> Gráfico de Faturamento por Vendedor</h4>
                                 <span class="card-pill">Comparativo</span>
                             </div>
-                            <div class="chart-placeholder-box">
-                                <i class="bi bi-bar-chart chart-placeholder-icon"></i>
-                                <h5>Gráfico de Faturamento</h5>
-                                <p>Estrutura reservada para o gráfico de barras comparando o faturamento de cada
-                                    vendedor.</p>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="chart-faturamento-vendedor"></canvas>
                             </div>
                         </div>
                     </div>
@@ -298,10 +293,8 @@
                                 <h4><i class="bi bi-receipt text-primary"></i> Gráfico de Pedidos por Vendedor</h4>
                                 <span class="card-pill">Volume</span>
                             </div>
-                            <div class="chart-placeholder-box">
-                                <i class="bi bi-pie-chart chart-placeholder-icon"></i>
-                                <h5>Gráfico de Pedidos Realizados</h5>
-                                <p>Estrutura reservada para visualização do volume total de pedidos por vendedor.</p>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="chart-pedidos-vendedor"></canvas>
                             </div>
                         </div>
                     </div>
@@ -323,13 +316,13 @@
                                     <th>Classificação</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="5" class="table-empty-row">
-                                        <i class="bi bi-inbox"></i>
-                                        <span>Estrutura de tabela pronta para exibição do ranking dos vendedores.</span>
-                                    </td>
-                                </tr>
+                            <tbody id="tbody-vendedores">
+                                <tr><td><strong>1º</strong></td><td>Priya Herrera</td><td>45 pedidos / 218 itens</td><td>$ 28.195,51</td><td><span class="badge-status top">⭐ Top</span></td></tr>
+                                <tr><td><strong>2º</strong></td><td>Sofia Kowalski</td><td>46 pedidos / 202 itens</td><td>$ 24.885,19</td><td><span class="badge-status top">⭐ Top</span></td></tr>
+                                <tr><td><strong>3º</strong></td><td>Tomás Tanaka</td><td>38 pedidos / 183 itens</td><td>$ 24.112,18</td><td><span class="badge-status mid">Regular</span></td></tr>
+                                <tr><td><strong>4º</strong></td><td>Omar Haddad</td><td>35 pedidos / 168 itens</td><td>$ 22.989,34</td><td><span class="badge-status mid">Regular</span></td></tr>
+                                <tr><td><strong>5º</strong></td><td>Elena Cohen</td><td>40 pedidos / 164 itens</td><td>$ 21.737,26</td><td><span class="badge-status mid">Regular</span></td></tr>
+                                <tr><td><strong>6º</strong></td><td>Chen Bennett</td><td>36 pedidos / 173 itens</td><td>$ 20.517,66</td><td><span class="badge-status low">Atenção</span></td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -389,11 +382,8 @@
                         <h4><i class="bi bi-map text-primary"></i> Gráfico Comparativo por Região</h4>
                         <span class="card-pill">Gráfico</span>
                     </div>
-                    <div class="chart-placeholder-box">
-                        <i class="bi bi-bar-chart-steps chart-placeholder-icon"></i>
-                        <h5>Área do Gráfico Regional</h5>
-                        <p>Estrutura reservada para comparação visual do faturamento e quantidade de pedidos por região.
-                        </p>
+                    <div class="chart-container" style="position: relative; height: 320px;">
+                        <canvas id="chart-comparativo-regiao"></canvas>
                     </div>
                 </div>
 
@@ -412,14 +402,12 @@
                                     <th>Participação Percentual</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="4" class="table-empty-row">
-                                        <i class="bi bi-inbox"></i>
-                                        <span>Estrutura de tabela pronta para receber as regiões da base de
-                                            dados.</span>
-                                    </td>
-                                </tr>
+                            <tbody id="tbody-regioes">
+                                <tr><td>Central</td><td>$ 30.787,94</td><td>50</td><td>21.6 %</td></tr>
+                                <tr><td>Sul</td><td>$ 30.083,51</td><td>42</td><td>21.1 %</td></tr>
+                                <tr><td>Norte</td><td>$ 28.925,00</td><td>46</td><td>20.3 %</td></tr>
+                                <tr><td>Leste</td><td>$ 26.485,82</td><td>52</td><td>18.6 %</td></tr>
+                                <tr><td>Oeste</td><td>$ 26.154,87</td><td>50</td><td>18.4 %</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -474,11 +462,8 @@
                         </h4>
                         <span class="card-pill">Linha do Tempo</span>
                     </div>
-                    <div class="chart-placeholder-box">
-                        <i class="bi bi-graph-up chart-placeholder-icon"></i>
-                        <h5>Área do Gráfico de Evolução Temporal</h5>
-                        <p>Estrutura reservada para gráfico de linha com evolução de crescimento ou queda das vendas.
-                        </p>
+                    <div class="chart-container" style="position: relative; height: 320px;">
+                        <canvas id="chart-evolucao-mensal"></canvas>
                     </div>
                 </div>
 
@@ -498,14 +483,13 @@
                                     <th>Evolução (%)</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="5" class="table-empty-row">
-                                        <i class="bi bi-inbox"></i>
-                                        <span>Estrutura de tabela pronta para receber os períodos mensais
-                                            tratados.</span>
-                                    </td>
-                                </tr>
+                            <tbody id="tbody-temporal">
+                                <tr><td>2026-01</td><td>$ 24.177,45</td><td>40</td><td>184</td><td><span class="text-danger">▼ nan %</span></td></tr>
+                                <tr><td>2026-02</td><td>$ 13.788,89</td><td>29</td><td>126</td><td><span class="text-danger">▼ 43.0 %</span></td></tr>
+                                <tr><td>2026-03</td><td>$ 19.390,28</td><td>39</td><td>170</td><td><span class="text-success">▲ 40.6 %</span></td></tr>
+                                <tr><td>2026-04</td><td>$ 23.471,38</td><td>43</td><td>203</td><td><span class="text-success">▲ 21.0 %</span></td></tr>
+                                <tr><td>2026-05</td><td>$ 24.885,97</td><td>39</td><td>188</td><td><span class="text-success">▲ 6.0 %</span></td></tr>
+                                <tr><td>2026-06</td><td>$ 36.723,17</td><td>50</td><td>237</td><td><span class="text-success">▲ 47.6 %</span></td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -523,39 +507,39 @@
                     <div class="filters-container">
                         <div class="filter-item search-full">
                             <label class="filter-label">Pesquisa</label>
-                            <input type="text" class="custom-input"
+                            <input type="text" id="input-busca" class="custom-input"
                                 placeholder="Pesquisar por produto, vendedor, região ou ID...">
                         </div>
 
                         <div class="filter-item">
                             <label class="filter-label">Filtrar por Produto</label>
-                            <select class="custom-select">
+                            <select id="sel-produto" class="custom-select">
                                 <option value="">Todos os produtos</option>
                             </select>
                         </div>
 
                         <div class="filter-item">
                             <label class="filter-label">Filtrar por Vendedor</label>
-                            <select class="custom-select">
+                            <select id="sel-vendedor" class="custom-select">
                                 <option value="">Todos os vendedores</option>
                             </select>
                         </div>
 
                         <div class="filter-item">
                             <label class="filter-label">Filtrar por Região</label>
-                            <select class="custom-select">
+                            <select id="sel-regiao" class="custom-select">
                                 <option value="">Todas as regiões</option>
                             </select>
                         </div>
 
                         <div class="filter-item">
                             <label class="filter-label">Período Inicial</label>
-                            <input type="date" class="custom-input">
+                            <input type="date" id="data-inicio" class="custom-input">
                         </div>
 
                         <div class="filter-item">
                             <label class="filter-label">Período Final</label>
-                            <input type="date" class="custom-input">
+                            <input type="date" id="data-fim" class="custom-input">
                         </div>
 
                         <div class="filter-item">
@@ -580,14 +564,27 @@
                                     <th>Vendedor</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="9" class="table-empty-row">
-                                        <i class="bi bi-database"></i>
-                                        <span>Estrutura de tabela com as 9 colunas pronta para receber os registros do
-                                            vendas.csv.</span>
-                                    </td>
-                                </tr>
+                            <tbody id="tbody-vendas">
+                                <tr><td>SO-1001</td><td>04/05/2026</td><td>Teclado Mecânico</td><td>6</td><td>$ 112,70</td><td>$ 676,20</td><td>$ 676,20</td><td>Norte</td><td>Sofia Kowalski</td></tr>
+                                <tr><td>SO-1002</td><td>26/06/2026</td><td>Hub USB-C</td><td>6</td><td>$ 35,78</td><td>$ 214,68</td><td>$ 214,68</td><td>Sul</td><td>Sofia Kowalski</td></tr>
+                                <tr><td>SO-1003</td><td>08/03/2026</td><td>Mesa com Regulagem de Altura</td><td>1</td><td>$ 111,15</td><td>$ 111,15</td><td>$ 111,15</td><td>Sul</td><td>Elena Cohen</td></tr>
+                                <tr><td>SO-1004</td><td>14/02/2026</td><td>Webcam 1080p</td><td>1</td><td>$ 112,67</td><td>$ 112,67</td><td>$ 112,67</td><td>Leste</td><td>Omar Haddad</td></tr>
+                                <tr><td>SO-1005</td><td>22/02/2026</td><td>Webcam 1080p</td><td>1</td><td>$ 54,09</td><td>$ 54,09</td><td>$ 54,09</td><td>Central</td><td>Sofia Kowalski</td></tr>
+                                <tr><td>SO-1006</td><td>18/01/2026</td><td>Luminária de Mesa</td><td>4</td><td>$ 215,54</td><td>$ 862,16</td><td>$ 862,16</td><td>Oeste</td><td>Omar Haddad</td></tr>
+                                <tr><td>SO-1007</td><td>13/04/2026</td><td>Organizador de Cabos</td><td>3</td><td>$ 17,52</td><td>$ 52,56</td><td>$ 52,56</td><td>Leste</td><td>Tomás Tanaka</td></tr>
+                                <tr><td>SO-1008</td><td>06/05/2026</td><td>Fones de Ouvido com Cancelamento de Ruído</td><td>6</td><td>$ 181,65</td><td>$ 1.089,90</td><td>$ 1.089,90</td><td>Oeste</td><td>Omar Haddad</td></tr>
+                                <tr><td>SO-1009</td><td>04/04/2026</td><td>Suporte para Notebook</td><td>8</td><td>$ 28,72</td><td>$ 229,76</td><td>$ 229,76</td><td>Leste</td><td>Sofia Kowalski</td></tr>
+                                <tr><td>SO-1010</td><td>01/03/2026</td><td>Cadeira Ergonômica</td><td>7</td><td>$ 143,97</td><td>$ 1.007,79</td><td>$ 1.007,79</td><td>Leste</td><td>Priya Herrera</td></tr>
+                                <tr><td>SO-1011</td><td>27/01/2026</td><td>Organizador de Cabos</td><td>7</td><td>$ 147,79</td><td>$ 1.034,53</td><td>$ 1.034,53</td><td>Norte</td><td>Priya Herrera</td></tr>
+                                <tr><td>SO-1012</td><td>19/05/2026</td><td>Mouse sem Fio</td><td>5</td><td>$ 206,67</td><td>$ 1.033,35</td><td>$ 1.033,35</td><td>Norte</td><td>Chen Bennett</td></tr>
+                                <tr><td>SO-1013</td><td>19/04/2026</td><td>Hub USB-C</td><td>6</td><td>$ 119,74</td><td>$ 718,44</td><td>$ 718,44</td><td>Sul</td><td>Tomás Tanaka</td></tr>
+                                <tr><td>SO-1014</td><td>16/04/2026</td><td>Teclado Mecânico</td><td>2</td><td>$ 179,18</td><td>$ 358,36</td><td>$ 358,36</td><td>Norte</td><td>Tomás Tanaka</td></tr>
+                                <tr><td>SO-1015</td><td>14/06/2026</td><td>SSD Externo 1 TB</td><td>8</td><td>$ 149,41</td><td>$ 1.195,28</td><td>$ 1.195,28</td><td>Leste</td><td>Chen Bennett</td></tr>
+                                <tr><td>SO-1016</td><td>06/01/2026</td><td>Cadeira Ergonômica</td><td>1</td><td>$ 223,56</td><td>$ 223,56</td><td>$ 223,56</td><td>Central</td><td>Elena Cohen</td></tr>
+                                <tr><td>SO-1017</td><td>11/03/2026</td><td>Luminária de Mesa</td><td>7</td><td>$ 59,12</td><td>$ 413,84</td><td>$ 413,84</td><td>Norte</td><td>Chen Bennett</td></tr>
+                                <tr><td>SO-1018</td><td>17/04/2026</td><td>Teclado Mecânico</td><td>7</td><td>$ 90,62</td><td>$ 634,34</td><td>$ 634,34</td><td>Leste</td><td>Priya Herrera</td></tr>
+                                <tr><td>SO-1019</td><td>10/01/2026</td><td>Webcam 1080p</td><td>2</td><td>$ 197,09</td><td>$ 394,18</td><td>$ 394,18</td><td>Leste</td><td>Sofia Kowalski</td></tr>
+                                <tr><td>SO-1020</td><td>29/06/2026</td><td>Suporte para Notebook</td><td>4</td><td>$ 167,13</td><td>$ 668,52</td><td>$ 668,52</td><td>Leste</td><td>Priya Herrera</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -610,11 +607,10 @@
         </main>
     </div>
 
-    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Scripts do projeto -->
-    <script src="static/js/charts.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="static/js/dados.js?v=7"></script>
+    <script src="static/js/main.js?v=7"></script>
 </body>
 
 </html>
