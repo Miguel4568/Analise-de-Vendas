@@ -1,6 +1,0 @@
-# Manipulação e análise de dados
-pandas
-
-# Visualização de dados e gráficos
-matplotlib
-seaborn

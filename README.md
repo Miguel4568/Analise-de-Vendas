@@ -7,8 +7,7 @@ utilizando Python e Pandas.
 ## Tecnologias utilizadas
 - Python
 - Pandas
-- Matplotlib
-- Flask
+- NumPy
 - HTML
 - CSS
 - JavaScript

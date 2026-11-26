@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Análise de Vendas</title>
+    <title>VendaCerta</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,55 +13,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/style.css">
+
+    <link rel="icon" type="image/svg+xml" href="logoTED.svg">
+
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
 
     <aside class="sidebar">
         <div class="sidebar-header">
-            <div class="logo-badge">
-                <i class="bi bi-bar-chart-fill text-white"></i>
-            </div>
-            <div class="logo-title">
-                <h1>Sales Analytics</h1>
-                <span>Painel Comercial</span>
-            </div>
+            <a href="#" class="sidebar-brand" title="Painel Comercial TED">
+                <div class="brand-logo-card">
+                    <img src="logoTED.svg" alt="TED Logo" class="sidebar-logo">
+                </div>
+            </a>
         </div>
 
         <nav class="sidebar-nav">
-            <div class="nav-category">Navegação</div>
+            <div class="nav-category">
+                <span>Principal</span>
+            </div>
             <a href="#visao-geral" class="nav-link-item active">
-                <i class="bi bi-grid-1x2-fill"></i>
-                <span>Visão Geral</span>
+                <span class="nav-icon-wrap">
+                    <i class="bi bi-grid-1x2-fill"></i>
+                </span>
+                <span class="nav-label">Visão Geral</span>
+                <span class="nav-badge live"><span class="badge-dot"></span>Live</span>
+                <i class="bi bi-chevron-right nav-arrow"></i>
             </a>
+
+            <div class="nav-category">
+                <span>Análises & Métricas</span>
+            </div>
             <a href="#produtos" class="nav-link-item">
-                <i class="bi bi-box-seam-fill"></i>
-                <span>Análise de Produtos</span>
+                <span class="nav-icon-wrap">
+                    <i class="bi bi-box-seam-fill"></i>
+                </span>
+                <span class="nav-label">Análise de Produtos</span>
+                <i class="bi bi-chevron-right nav-arrow"></i>
             </a>
             <a href="#vendedores" class="nav-link-item">
-                <i class="bi bi-people-fill"></i>
-                <span>Análise de Vendedores</span>
+                <span class="nav-icon-wrap">
+                    <i class="bi bi-people-fill"></i>
+                </span>
+                <span class="nav-label">Análise de Vendedores</span>
+                <i class="bi bi-chevron-right nav-arrow"></i>
             </a>
             <a href="#regioes" class="nav-link-item">
-                <i class="bi bi-geo-alt-fill"></i>
-                <span>Análise por Região</span>
+                <span class="nav-icon-wrap">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </span>
+                <span class="nav-label">Análise por Região</span>
+                <i class="bi bi-chevron-right nav-arrow"></i>
             </a>
             <a href="#temporal" class="nav-link-item">
-                <i class="bi bi-calendar-event-fill"></i>
-                <span>Análise Temporal</span>
+                <span class="nav-icon-wrap">
+                    <i class="bi bi-calendar-event-fill"></i>
+                </span>
+                <span class="nav-label">Análise Temporal</span>
+                <i class="bi bi-chevron-right nav-arrow"></i>
             </a>
+
+            <div class="nav-category">
+                <span>Relatórios</span>
+            </div>
             <a href="#tabela" class="nav-link-item">
-                <i class="bi bi-table"></i>
-                <span>Tabela Completa</span>
+                <span class="nav-icon-wrap">
+                    <i class="bi bi-table"></i>
+                </span>
+                <span class="nav-label">Tabela Completa</span>
+                <span class="nav-badge count">CSV</span>
+                <i class="bi bi-chevron-right nav-arrow"></i>
             </a>
         </nav>
 
         <div class="sidebar-footer">
-            <div class="badge-source">
-                <span class="status-dot"></span>
-                <div>
-                    <div>Fonte: <strong>vendas.csv</strong></div>
-                    <small>Template Estrutural</small>
+            <div class="system-status-card">
+                <div class="status-header">
+                    <div class="status-pulse-wrap">
+                        <span class="status-dot"></span>
+                        <span class="status-ring"></span>
+                    </div>
+                    <span class="status-title">Base de Dados</span>
+                    <span class="status-tag">Online</span>
+                </div>
+                <div class="status-body">
+                    <div class="status-file-icon">
+                        <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                    </div>
+                    <div class="status-file-info">
+                        <span class="file-name">vendas.csv</span>
+                        <span class="file-desc">Atualizado em tempo real</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,13 +115,22 @@
 
         <header class="topbar">
             <div class="topbar-info">
+                <div class="topbar-breadcrumb">
+                    <span class="breadcrumb-badge"><i class="bi bi-shield-check"></i> TED Analytics</span>
+                    <i class="bi bi-chevron-right breadcrumb-sep"></i>
+                    <span class="breadcrumb-current">Painel Comercial</span>
+                </div>
                 <h2>Dashboard de Análise de Vendas</h2>
-                <p>Interface estrutural para análise de desempenho comercial</p>
+                <p>Interface executiva para acompanhamento e inteligência de vendas</p>
             </div>
             <div class="topbar-actions">
                 <div class="period-pill">
                     <i class="bi bi-calendar3"></i>
                     <span>Período Selecionado</span>
+                </div>
+                <div class="status-pill-online">
+                    <span class="online-indicator"></span>
+                    <span>Conectado</span>
                 </div>
             </div>
         </header>
@@ -247,18 +300,90 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody-produtos">
-                                <tr><td>1</td><td>Suporte para Notebook</td><td>133</td><td>$ 18.713,90</td><td><span class="badge-status top">Destaque</span></td></tr>
-                                <tr><td>2</td><td>Webcam 1080p</td><td>122</td><td>$ 16.809,84</td><td><span class="badge-status top">Destaque</span></td></tr>
-                                <tr><td>3</td><td>Organizador de Cabos</td><td>113</td><td>$ 16.142,37</td><td><span class="badge-status top">Destaque</span></td></tr>
-                                <tr><td>4</td><td>Mouse sem Fio</td><td>102</td><td>$ 14.290,77</td><td><span class="badge-status top">Destaque</span></td></tr>
-                                <tr><td>5</td><td>SSD Externo 1 TB</td><td>97</td><td>$ 12.103,90</td><td><span class="badge-status mid">Regular</span></td></tr>
-                                <tr><td>6</td><td>Fones de Ouvido com Cancelamento de Ruído</td><td>79</td><td>$ 10.674,32</td><td><span class="badge-status mid">Regular</span></td></tr>
-                                <tr><td>7</td><td>Cadeira Ergonômica</td><td>98</td><td>$ 10.624,93</td><td><span class="badge-status mid">Regular</span></td></tr>
-                                <tr><td>8</td><td>Luminária de Mesa</td><td>71</td><td>$ 10.445,80</td><td><span class="badge-status mid">Regular</span></td></tr>
-                                <tr><td>9</td><td>Teclado Mecânico</td><td>75</td><td>$ 9.513,33</td><td><span class="badge-status low">Baixo</span></td></tr>
-                                <tr><td>10</td><td>27-inch Monitor</td><td>76</td><td>$ 8.509,33</td><td><span class="badge-status low">Baixo</span></td></tr>
-                                <tr><td>11</td><td>Hub USB-C</td><td>77</td><td>$ 8.082,10</td><td><span class="badge-status low">Baixo</span></td></tr>
-                                <tr><td>12</td><td>Mesa com Regulagem de Altura</td><td>65</td><td>$ 6.526,55</td><td><span class="badge-status low">Baixo</span></td></tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Suporte para Notebook</td>
+                                    <td>133</td>
+                                    <td>$ 18.713,90</td>
+                                    <td><span class="badge-status top">Destaque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Webcam 1080p</td>
+                                    <td>122</td>
+                                    <td>$ 16.809,84</td>
+                                    <td><span class="badge-status top">Destaque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Organizador de Cabos</td>
+                                    <td>113</td>
+                                    <td>$ 16.142,37</td>
+                                    <td><span class="badge-status top">Destaque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Mouse sem Fio</td>
+                                    <td>102</td>
+                                    <td>$ 14.290,77</td>
+                                    <td><span class="badge-status top">Destaque</span></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>SSD Externo 1 TB</td>
+                                    <td>97</td>
+                                    <td>$ 12.103,90</td>
+                                    <td><span class="badge-status mid">Regular</span></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Fones de Ouvido com Cancelamento de Ruído</td>
+                                    <td>79</td>
+                                    <td>$ 10.674,32</td>
+                                    <td><span class="badge-status mid">Regular</span></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Cadeira Ergonômica</td>
+                                    <td>98</td>
+                                    <td>$ 10.624,93</td>
+                                    <td><span class="badge-status mid">Regular</span></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Luminária de Mesa</td>
+                                    <td>71</td>
+                                    <td>$ 10.445,80</td>
+                                    <td><span class="badge-status mid">Regular</span></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Teclado Mecânico</td>
+                                    <td>75</td>
+                                    <td>$ 9.513,33</td>
+                                    <td><span class="badge-status low">Baixo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>27-inch Monitor</td>
+                                    <td>76</td>
+                                    <td>$ 8.509,33</td>
+                                    <td><span class="badge-status low">Baixo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Hub USB-C</td>
+                                    <td>77</td>
+                                    <td>$ 8.082,10</td>
+                                    <td><span class="badge-status low">Baixo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Mesa com Regulagem de Altura</td>
+                                    <td>65</td>
+                                    <td>$ 6.526,55</td>
+                                    <td><span class="badge-status low">Baixo</span></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -314,12 +439,48 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody-vendedores">
-                                <tr><td><strong>1º</strong></td><td>Priya Herrera</td><td>45 pedidos / 218 itens</td><td>$ 28.195,51</td><td><span class="badge-status top">⭐ Top</span></td></tr>
-                                <tr><td><strong>2º</strong></td><td>Sofia Kowalski</td><td>46 pedidos / 202 itens</td><td>$ 24.885,19</td><td><span class="badge-status top">⭐ Top</span></td></tr>
-                                <tr><td><strong>3º</strong></td><td>Tomás Tanaka</td><td>38 pedidos / 183 itens</td><td>$ 24.112,18</td><td><span class="badge-status mid">Regular</span></td></tr>
-                                <tr><td><strong>4º</strong></td><td>Omar Haddad</td><td>35 pedidos / 168 itens</td><td>$ 22.989,34</td><td><span class="badge-status mid">Regular</span></td></tr>
-                                <tr><td><strong>5º</strong></td><td>Elena Cohen</td><td>40 pedidos / 164 itens</td><td>$ 21.737,26</td><td><span class="badge-status mid">Regular</span></td></tr>
-                                <tr><td><strong>6º</strong></td><td>Chen Bennett</td><td>36 pedidos / 173 itens</td><td>$ 20.517,66</td><td><span class="badge-status low">Atenção</span></td></tr>
+                                <tr>
+                                    <td><strong>1º</strong></td>
+                                    <td>Priya Herrera</td>
+                                    <td>45 pedidos / 218 itens</td>
+                                    <td>$ 28.195,51</td>
+                                    <td><span class="badge-status top">⭐ Top</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2º</strong></td>
+                                    <td>Sofia Kowalski</td>
+                                    <td>46 pedidos / 202 itens</td>
+                                    <td>$ 24.885,19</td>
+                                    <td><span class="badge-status top">⭐ Top</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3º</strong></td>
+                                    <td>Tomás Tanaka</td>
+                                    <td>38 pedidos / 183 itens</td>
+                                    <td>$ 24.112,18</td>
+                                    <td><span class="badge-status mid">Regular</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4º</strong></td>
+                                    <td>Omar Haddad</td>
+                                    <td>35 pedidos / 168 itens</td>
+                                    <td>$ 22.989,34</td>
+                                    <td><span class="badge-status mid">Regular</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5º</strong></td>
+                                    <td>Elena Cohen</td>
+                                    <td>40 pedidos / 164 itens</td>
+                                    <td>$ 21.737,26</td>
+                                    <td><span class="badge-status mid">Regular</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>6º</strong></td>
+                                    <td>Chen Bennett</td>
+                                    <td>36 pedidos / 173 itens</td>
+                                    <td>$ 20.517,66</td>
+                                    <td><span class="badge-status low">Atenção</span></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -400,11 +561,36 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody-regioes">
-                                <tr><td>Central</td><td>$ 30.787,94</td><td>50</td><td>21.6 %</td></tr>
-                                <tr><td>Sul</td><td>$ 30.083,51</td><td>42</td><td>21.1 %</td></tr>
-                                <tr><td>Norte</td><td>$ 28.925,00</td><td>46</td><td>20.3 %</td></tr>
-                                <tr><td>Leste</td><td>$ 26.485,82</td><td>52</td><td>18.6 %</td></tr>
-                                <tr><td>Oeste</td><td>$ 26.154,87</td><td>50</td><td>18.4 %</td></tr>
+                                <tr>
+                                    <td>Central</td>
+                                    <td>$ 30.787,94</td>
+                                    <td>50</td>
+                                    <td>21.6 %</td>
+                                </tr>
+                                <tr>
+                                    <td>Sul</td>
+                                    <td>$ 30.083,51</td>
+                                    <td>42</td>
+                                    <td>21.1 %</td>
+                                </tr>
+                                <tr>
+                                    <td>Norte</td>
+                                    <td>$ 28.925,00</td>
+                                    <td>46</td>
+                                    <td>20.3 %</td>
+                                </tr>
+                                <tr>
+                                    <td>Leste</td>
+                                    <td>$ 26.485,82</td>
+                                    <td>52</td>
+                                    <td>18.6 %</td>
+                                </tr>
+                                <tr>
+                                    <td>Oeste</td>
+                                    <td>$ 26.154,87</td>
+                                    <td>50</td>
+                                    <td>18.4 %</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -481,12 +667,48 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody-temporal">
-                                <tr><td>2026-01</td><td>$ 24.177,45</td><td>40</td><td>184</td><td>—</td></tr>
-                                <tr><td>2026-02</td><td>$ 13.788,89</td><td>29</td><td>126</td><td><span class="text-danger">▼ 43.0 %</span></td></tr>
-                                <tr><td>2026-03</td><td>$ 19.390,28</td><td>39</td><td>170</td><td><span class="text-success">▲ 40.6 %</span></td></tr>
-                                <tr><td>2026-04</td><td>$ 23.471,38</td><td>43</td><td>203</td><td><span class="text-success">▲ 21.0 %</span></td></tr>
-                                <tr><td>2026-05</td><td>$ 24.885,97</td><td>39</td><td>188</td><td><span class="text-success">▲ 6.0 %</span></td></tr>
-                                <tr><td>2026-06</td><td>$ 36.723,17</td><td>50</td><td>237</td><td><span class="text-success">▲ 47.6 %</span></td></tr>
+                                <tr>
+                                    <td>2026-01</td>
+                                    <td>$ 24.177,45</td>
+                                    <td>40</td>
+                                    <td>184</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>2026-02</td>
+                                    <td>$ 13.788,89</td>
+                                    <td>29</td>
+                                    <td>126</td>
+                                    <td><span class="text-danger">▼ 43.0 %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026-03</td>
+                                    <td>$ 19.390,28</td>
+                                    <td>39</td>
+                                    <td>170</td>
+                                    <td><span class="text-success">▲ 40.6 %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026-04</td>
+                                    <td>$ 23.471,38</td>
+                                    <td>43</td>
+                                    <td>203</td>
+                                    <td><span class="text-success">▲ 21.0 %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026-05</td>
+                                    <td>$ 24.885,97</td>
+                                    <td>39</td>
+                                    <td>188</td>
+                                    <td><span class="text-success">▲ 6.0 %</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2026-06</td>
+                                    <td>$ 36.723,17</td>
+                                    <td>50</td>
+                                    <td>237</td>
+                                    <td><span class="text-success">▲ 47.6 %</span></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -562,26 +784,226 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody-vendas">
-                                <tr><td>SO-1001</td><td>04/05/2026</td><td>Teclado Mecânico</td><td>6</td><td>$ 112,70</td><td>$ 676,20</td><td>$ 676,20</td><td>Norte</td><td>Sofia Kowalski</td></tr>
-                                <tr><td>SO-1002</td><td>26/06/2026</td><td>Hub USB-C</td><td>6</td><td>$ 35,78</td><td>$ 214,68</td><td>$ 214,68</td><td>Sul</td><td>Sofia Kowalski</td></tr>
-                                <tr><td>SO-1003</td><td>08/03/2026</td><td>Mesa com Regulagem de Altura</td><td>1</td><td>$ 111,15</td><td>$ 111,15</td><td>$ 111,15</td><td>Sul</td><td>Elena Cohen</td></tr>
-                                <tr><td>SO-1004</td><td>14/02/2026</td><td>Webcam 1080p</td><td>1</td><td>$ 112,67</td><td>$ 112,67</td><td>$ 112,67</td><td>Leste</td><td>Omar Haddad</td></tr>
-                                <tr><td>SO-1005</td><td>22/02/2026</td><td>Webcam 1080p</td><td>1</td><td>$ 54,09</td><td>$ 54,09</td><td>$ 54,09</td><td>Central</td><td>Sofia Kowalski</td></tr>
-                                <tr><td>SO-1006</td><td>18/01/2026</td><td>Luminária de Mesa</td><td>4</td><td>$ 215,54</td><td>$ 862,16</td><td>$ 862,16</td><td>Oeste</td><td>Omar Haddad</td></tr>
-                                <tr><td>SO-1007</td><td>13/04/2026</td><td>Organizador de Cabos</td><td>3</td><td>$ 17,52</td><td>$ 52,56</td><td>$ 52,56</td><td>Leste</td><td>Tomás Tanaka</td></tr>
-                                <tr><td>SO-1008</td><td>06/05/2026</td><td>Fones de Ouvido com Cancelamento de Ruído</td><td>6</td><td>$ 181,65</td><td>$ 1.089,90</td><td>$ 1.089,90</td><td>Oeste</td><td>Omar Haddad</td></tr>
-                                <tr><td>SO-1009</td><td>04/04/2026</td><td>Suporte para Notebook</td><td>8</td><td>$ 28,72</td><td>$ 229,76</td><td>$ 229,76</td><td>Leste</td><td>Sofia Kowalski</td></tr>
-                                <tr><td>SO-1010</td><td>01/03/2026</td><td>Cadeira Ergonômica</td><td>7</td><td>$ 143,97</td><td>$ 1.007,79</td><td>$ 1.007,79</td><td>Leste</td><td>Priya Herrera</td></tr>
-                                <tr><td>SO-1011</td><td>27/01/2026</td><td>Organizador de Cabos</td><td>7</td><td>$ 147,79</td><td>$ 1.034,53</td><td>$ 1.034,53</td><td>Norte</td><td>Priya Herrera</td></tr>
-                                <tr><td>SO-1012</td><td>19/05/2026</td><td>Mouse sem Fio</td><td>5</td><td>$ 206,67</td><td>$ 1.033,35</td><td>$ 1.033,35</td><td>Norte</td><td>Chen Bennett</td></tr>
-                                <tr><td>SO-1013</td><td>19/04/2026</td><td>Hub USB-C</td><td>6</td><td>$ 119,74</td><td>$ 718,44</td><td>$ 718,44</td><td>Sul</td><td>Tomás Tanaka</td></tr>
-                                <tr><td>SO-1014</td><td>16/04/2026</td><td>Teclado Mecânico</td><td>2</td><td>$ 179,18</td><td>$ 358,36</td><td>$ 358,36</td><td>Norte</td><td>Tomás Tanaka</td></tr>
-                                <tr><td>SO-1015</td><td>14/06/2026</td><td>SSD Externo 1 TB</td><td>8</td><td>$ 149,41</td><td>$ 1.195,28</td><td>$ 1.195,28</td><td>Leste</td><td>Chen Bennett</td></tr>
-                                <tr><td>SO-1016</td><td>06/01/2026</td><td>Cadeira Ergonômica</td><td>1</td><td>$ 223,56</td><td>$ 223,56</td><td>$ 223,56</td><td>Central</td><td>Elena Cohen</td></tr>
-                                <tr><td>SO-1017</td><td>11/03/2026</td><td>Luminária de Mesa</td><td>7</td><td>$ 59,12</td><td>$ 413,84</td><td>$ 413,84</td><td>Norte</td><td>Chen Bennett</td></tr>
-                                <tr><td>SO-1018</td><td>17/04/2026</td><td>Teclado Mecânico</td><td>7</td><td>$ 90,62</td><td>$ 634,34</td><td>$ 634,34</td><td>Leste</td><td>Priya Herrera</td></tr>
-                                <tr><td>SO-1019</td><td>10/01/2026</td><td>Webcam 1080p</td><td>2</td><td>$ 197,09</td><td>$ 394,18</td><td>$ 394,18</td><td>Leste</td><td>Sofia Kowalski</td></tr>
-                                <tr><td>SO-1020</td><td>29/06/2026</td><td>Suporte para Notebook</td><td>4</td><td>$ 167,13</td><td>$ 668,52</td><td>$ 668,52</td><td>Leste</td><td>Priya Herrera</td></tr>
+                                <tr>
+                                    <td>SO-1001</td>
+                                    <td>04/05/2026</td>
+                                    <td>Teclado Mecânico</td>
+                                    <td>6</td>
+                                    <td>$ 112,70</td>
+                                    <td>$ 676,20</td>
+                                    <td>$ 676,20</td>
+                                    <td>Norte</td>
+                                    <td>Sofia Kowalski</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1002</td>
+                                    <td>26/06/2026</td>
+                                    <td>Hub USB-C</td>
+                                    <td>6</td>
+                                    <td>$ 35,78</td>
+                                    <td>$ 214,68</td>
+                                    <td>$ 214,68</td>
+                                    <td>Sul</td>
+                                    <td>Sofia Kowalski</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1003</td>
+                                    <td>08/03/2026</td>
+                                    <td>Mesa com Regulagem de Altura</td>
+                                    <td>1</td>
+                                    <td>$ 111,15</td>
+                                    <td>$ 111,15</td>
+                                    <td>$ 111,15</td>
+                                    <td>Sul</td>
+                                    <td>Elena Cohen</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1004</td>
+                                    <td>14/02/2026</td>
+                                    <td>Webcam 1080p</td>
+                                    <td>1</td>
+                                    <td>$ 112,67</td>
+                                    <td>$ 112,67</td>
+                                    <td>$ 112,67</td>
+                                    <td>Leste</td>
+                                    <td>Omar Haddad</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1005</td>
+                                    <td>22/02/2026</td>
+                                    <td>Webcam 1080p</td>
+                                    <td>1</td>
+                                    <td>$ 54,09</td>
+                                    <td>$ 54,09</td>
+                                    <td>$ 54,09</td>
+                                    <td>Central</td>
+                                    <td>Sofia Kowalski</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1006</td>
+                                    <td>18/01/2026</td>
+                                    <td>Luminária de Mesa</td>
+                                    <td>4</td>
+                                    <td>$ 215,54</td>
+                                    <td>$ 862,16</td>
+                                    <td>$ 862,16</td>
+                                    <td>Oeste</td>
+                                    <td>Omar Haddad</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1007</td>
+                                    <td>13/04/2026</td>
+                                    <td>Organizador de Cabos</td>
+                                    <td>3</td>
+                                    <td>$ 17,52</td>
+                                    <td>$ 52,56</td>
+                                    <td>$ 52,56</td>
+                                    <td>Leste</td>
+                                    <td>Tomás Tanaka</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1008</td>
+                                    <td>06/05/2026</td>
+                                    <td>Fones de Ouvido com Cancelamento de Ruído</td>
+                                    <td>6</td>
+                                    <td>$ 181,65</td>
+                                    <td>$ 1.089,90</td>
+                                    <td>$ 1.089,90</td>
+                                    <td>Oeste</td>
+                                    <td>Omar Haddad</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1009</td>
+                                    <td>04/04/2026</td>
+                                    <td>Suporte para Notebook</td>
+                                    <td>8</td>
+                                    <td>$ 28,72</td>
+                                    <td>$ 229,76</td>
+                                    <td>$ 229,76</td>
+                                    <td>Leste</td>
+                                    <td>Sofia Kowalski</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1010</td>
+                                    <td>01/03/2026</td>
+                                    <td>Cadeira Ergonômica</td>
+                                    <td>7</td>
+                                    <td>$ 143,97</td>
+                                    <td>$ 1.007,79</td>
+                                    <td>$ 1.007,79</td>
+                                    <td>Leste</td>
+                                    <td>Priya Herrera</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1011</td>
+                                    <td>27/01/2026</td>
+                                    <td>Organizador de Cabos</td>
+                                    <td>7</td>
+                                    <td>$ 147,79</td>
+                                    <td>$ 1.034,53</td>
+                                    <td>$ 1.034,53</td>
+                                    <td>Norte</td>
+                                    <td>Priya Herrera</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1012</td>
+                                    <td>19/05/2026</td>
+                                    <td>Mouse sem Fio</td>
+                                    <td>5</td>
+                                    <td>$ 206,67</td>
+                                    <td>$ 1.033,35</td>
+                                    <td>$ 1.033,35</td>
+                                    <td>Norte</td>
+                                    <td>Chen Bennett</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1013</td>
+                                    <td>19/04/2026</td>
+                                    <td>Hub USB-C</td>
+                                    <td>6</td>
+                                    <td>$ 119,74</td>
+                                    <td>$ 718,44</td>
+                                    <td>$ 718,44</td>
+                                    <td>Sul</td>
+                                    <td>Tomás Tanaka</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1014</td>
+                                    <td>16/04/2026</td>
+                                    <td>Teclado Mecânico</td>
+                                    <td>2</td>
+                                    <td>$ 179,18</td>
+                                    <td>$ 358,36</td>
+                                    <td>$ 358,36</td>
+                                    <td>Norte</td>
+                                    <td>Tomás Tanaka</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1015</td>
+                                    <td>14/06/2026</td>
+                                    <td>SSD Externo 1 TB</td>
+                                    <td>8</td>
+                                    <td>$ 149,41</td>
+                                    <td>$ 1.195,28</td>
+                                    <td>$ 1.195,28</td>
+                                    <td>Leste</td>
+                                    <td>Chen Bennett</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1016</td>
+                                    <td>06/01/2026</td>
+                                    <td>Cadeira Ergonômica</td>
+                                    <td>1</td>
+                                    <td>$ 223,56</td>
+                                    <td>$ 223,56</td>
+                                    <td>$ 223,56</td>
+                                    <td>Central</td>
+                                    <td>Elena Cohen</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1017</td>
+                                    <td>11/03/2026</td>
+                                    <td>Luminária de Mesa</td>
+                                    <td>7</td>
+                                    <td>$ 59,12</td>
+                                    <td>$ 413,84</td>
+                                    <td>$ 413,84</td>
+                                    <td>Norte</td>
+                                    <td>Chen Bennett</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1018</td>
+                                    <td>17/04/2026</td>
+                                    <td>Teclado Mecânico</td>
+                                    <td>7</td>
+                                    <td>$ 90,62</td>
+                                    <td>$ 634,34</td>
+                                    <td>$ 634,34</td>
+                                    <td>Leste</td>
+                                    <td>Priya Herrera</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1019</td>
+                                    <td>10/01/2026</td>
+                                    <td>Webcam 1080p</td>
+                                    <td>2</td>
+                                    <td>$ 197,09</td>
+                                    <td>$ 394,18</td>
+                                    <td>$ 394,18</td>
+                                    <td>Leste</td>
+                                    <td>Sofia Kowalski</td>
+                                </tr>
+                                <tr>
+                                    <td>SO-1020</td>
+                                    <td>29/06/2026</td>
+                                    <td>Suporte para Notebook</td>
+                                    <td>4</td>
+                                    <td>$ 167,13</td>
+                                    <td>$ 668,52</td>
+                                    <td>$ 668,52</td>
+                                    <td>Leste</td>
+                                    <td>Priya Herrera</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

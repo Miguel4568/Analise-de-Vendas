@@ -38,7 +38,7 @@ function carregarDados() {
 function renderizarGraficos(dados) {
     if (typeof Chart === 'undefined') return;
 
-    const cores = ['#6366f1', '#22c55e', '#f59e0b', '#06b6d4', '#a855f7', '#ef4444'];
+    const cores = ['#006FFF', '#004299', '#0284c7', '#10b981', '#f59e0b', '#3b82f6'];
     const fmtUSD = v => '$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
 
     const ctxRegiao = document.getElementById('chart-distribuicao-regiao');
@@ -78,8 +78,8 @@ function renderizarGraficos(dados) {
                 datasets: [{
                     label: 'Faturamento (USD)',
                     data: dados.temporal.map(t => t.faturamento),
-                    borderColor: '#6366f1',
-                    backgroundColor: 'rgba(99, 102, 241, 0.14)',
+                    borderColor: '#006FFF',
+                    backgroundColor: 'rgba(0, 111, 255, 0.12)',
                     fill: true,
                     tension: 0.35,
                     pointRadius: 4,
@@ -190,7 +190,7 @@ function renderizarGraficos(dados) {
                 datasets: [{
                     label: 'Faturamento (USD)',
                     data: dados.produtos.map(p => p.faturamento),
-                    backgroundColor: '#6366f1',
+                    backgroundColor: '#006FFF',
                     borderRadius: 6,
                 }],
             },
@@ -326,7 +326,7 @@ function renderizarGraficos(dados) {
                         type: 'line',
                         label: 'Tendência (USD)',
                         data: dados.temporal.map(t => t.faturamento),
-                        borderColor: '#4f46e5',
+                        borderColor: '#004299',
                         borderWidth: 2.5,
                         tension: 0.3,
                         pointRadius: 4,
@@ -335,7 +335,7 @@ function renderizarGraficos(dados) {
                         type: 'bar',
                         label: 'Faturamento Mensal (USD)',
                         data: dados.temporal.map(t => t.faturamento),
-                        backgroundColor: 'rgba(99, 102, 241, 0.28)',
+                        backgroundColor: 'rgba(0, 111, 255, 0.22)',
                         borderRadius: 6,
                     },
                 ],
@@ -684,9 +684,9 @@ function initMobileMenu() {
     btn.innerHTML = '<i class="bi bi-list"></i>';
     btn.setAttribute('aria-label', 'Abrir menu');
     btn.style.cssText = `
-        display: none; background: none; border: 1px solid #e2e8f0;
+        display: none; background: #07090e; border: 1px solid rgba(0, 111, 255, 0.25);
         border-radius: 8px; padding: 6px 10px; font-size: 20px;
-        cursor: pointer; color: #0f172a; line-height: 1; margin-right: 12px;`;
+        cursor: pointer; color: #006FFF; line-height: 1; margin-right: 12px;`;
     topbar.prepend(btn);
 
     const mq = window.matchMedia('(max-width: 768px)');
